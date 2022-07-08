@@ -1,5 +1,5 @@
 import react, {Fragment} from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/Shipam-logo.png"
 import style from "../components/css/Header.module.css"
 import {Button} from "../components/index.js"
@@ -10,9 +10,9 @@ const Header = () => {
         <Fragment>
             <nav>
                 <div className={style.logo}>
-                    <a href='/'>
+                    <Link to={home}>
                       <img src={logo} alt="shipam-logo"/>
-                    </a>
+                    </Link>
                 </div>
                 <div>
                     <ul>

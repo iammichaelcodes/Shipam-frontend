@@ -4,4 +4,11 @@ nav {
     display: flex;
     align-items: center;
     padding: 20px 5%;
+    border: var(--full-border);
+}
+.logo > a  {
+   display: flex;
+}
+.logo > a > img {
+    height: 50px;
 }
