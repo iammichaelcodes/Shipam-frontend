@@ -1,4 +1,4 @@
-# Getting Started Shopam Reach App
+# Getting Started Shipam Reach App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -8,8 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Projects Features
 
 ## About Project
-Shopam is an Ecommerce platform that enable users to buy product and services online. 
-This project was created by Micheal on the 7th of july, 2022.
+Shipam is an Ecommerce platform that enable users to buy product and services online. 
+This project was created by Micheal Evboumwan on the 7th of july, 2022.
 
 
 ## Available Scripts
