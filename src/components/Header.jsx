@@ -6,6 +6,7 @@ import {Button} from "../components/index.js"
 
 const Header = () => {
     const home = "/";
+    const track = "/track";
     return ( 
         <Fragment>
             <nav>
@@ -16,12 +17,36 @@ const Header = () => {
                 </div>
                 <div>
                     <ul>
-                       <li></li>
+                       <li>
+                          <Link to={track}>
+                             Track
+                          </Link>
+                       </li>
+                       <li>
+                          <Link to={track}>
+                             Developers
+                          </Link>
+                       </li>
+                       <li>
+                          <Link to={track}>
+                             Pricing
+                          </Link>
+                       </li>
+                       <li>
+                          <Link to={track}>
+                                Partners
+                          </Link>
+                       </li>
+                       <li>
+                          <Link to={track}>
+                             Blog
+                          </Link>
+                       </li>
                     </ul>
                 </div>
                 <div>
-                  <Button text="Sign In" />
-                  <Button text="Sign Up" />
+                  <Button text="Sign In" className={style.nav_btn}/>
+                  <Button text="Sign Up" className={style.nav_btn} />
                 </div>
             </nav>
         </Fragment>

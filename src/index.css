@@ -1,6 +1,7 @@
 :root{
   --main--color:#003E88;
   --full-border:1px solid var(--main--color);
+  --btn-color1 :#009AED;
 }
 body {
   margin: 0;
