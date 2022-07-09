@@ -4,24 +4,20 @@ nav {
     display: flex;
     align-items: center;
     padding: 20px 7%;
-    color: var(--main-color);
+    box-shadow: -4px 1px 1px 1px rgba(0, 0, 0, 0.1);
     font-size: 16px;
-    box-shadow:-4px 0px 5px 1px rgba(0,0,0,0.1);
 }
 .logo > a  {
    display: flex;
-   gap: 5px;
 }
 .logo > a > img {
     height: 35px;
 }
-
 nav > div:nth-child(2) {
     display: flex;
     width: calc(100% - 115px);
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 nav > div:nth-child(2) > ul {
     list-style-type: none;
@@ -33,15 +29,13 @@ nav > div:nth-child(2) > ul > li > a {
 }
 nav > div:nth-child(3) {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     gap: 10px;
 }
 .nav_btn {
-   padding: 10px;
-   border-radius: 5px;
-   background-color: var(--btn-color1);
-   color: white;
-   width: 80px;
-   border: none;
+    border: none;
+    padding: 10px;
+    background-color: var(--btn-color1);
+    color: white;
+    width: 80px;
+    border-radius: 7px;
 }
