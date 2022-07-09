@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {Fragment} from "react";
 import { Link } from "react-router-dom";
-import hamburger from "../assets/images/shipamMenuIcon.png"
+import logo from "../assets/images/Shipam-logo.png";
 import style from "../components/css/Header.module.css"
 import {Button} from "../components/index.js"
 
