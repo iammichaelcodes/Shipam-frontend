@@ -2,6 +2,7 @@ import { useState } from "react";
 import {Fragment} from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/Shipam-logo.png"
+import hamburger from "../assets/images/shipamMenuIcon.png"
 import style from "../components/css/Header.module.css"
 import {Button} from "../components/index.js"
 
@@ -22,7 +23,9 @@ const Header = () => {
                     <Link to={home}>
                       <img src={logo} alt="shipam-logo"/>
                     </Link>
-                    <span className={style.Menu_I}></span>
+                    <span className={style.Menu_Icon}>
+                        <img src={hamburger} alt="hamburger" />
+                    </span>
                 </div>
                 <div>
                     <ul>

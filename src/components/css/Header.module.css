@@ -42,3 +42,27 @@ nav > div:nth-child(3) {
     width: 85px;
     border-radius: 7px;
 }
+/** Hamburger hidden on Large screen ***/
+.logo > .Menu_Icon {
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    /*** Navbar Responsive web design styling ****/
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+    }
+    .logo > .Menu_Icon  {
+        display: flex;
+        height: 40px;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+    nav > div:nth-child(2) {
+        display: none;
+    }
+    nav > div:nth-child(3) {
+        display: none;
+    }
+}
