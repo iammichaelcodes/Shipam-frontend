@@ -4,7 +4,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 20px 7%;
-    box-shadow: -4px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: -4px 1px 0px 1px rgba(0, 0, 1, 0.1);
     font-size: 16px;
 }
 .logo > a  {
@@ -27,15 +27,18 @@ nav > div:nth-child(2) > ul {
 nav > div:nth-child(2) > ul > li > a {
     text-decoration: none;
 }
+nav > div:nth-child(2) > ul > li > a:hover {
+    text-decoration:underline
+}
 nav > div:nth-child(3) {
     display: flex;
-    gap: 10px;
+    gap: 25px;
 }
 .nav_btn {
     border: none;
-    padding: 10px;
+    padding: 13px 10px;
     background-color: var(--btn-color1);
     color: white;
-    width: 80px;
+    width: 85px;
     border-radius: 7px;
 }
