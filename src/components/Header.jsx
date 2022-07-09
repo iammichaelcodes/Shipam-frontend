@@ -33,7 +33,7 @@ const Header = () => {
                     </span>
                 </div>
                 <div className={ `${navMenu ? style.RWD_Nav_Menu : ""} `}>
-                    <div></div>
+                    <div onClick={closeNavMenu} style={{cursor:"pointer"}}></div>
                     <ul>
                         <li>
                             <span onClick={closeNavMenu}>&times;</span>
@@ -63,10 +63,15 @@ const Header = () => {
                              Blog
                           </Link>
                        </li>
+                       <li className={style.resBtn}>
+                       <span>
+                            <Button text="Sign In" className={style.nav_btn}/> <Button text="Sign Up" className={style.nav_btn} />
+                       </span>
+                       </li>
                     </ul>
-
+                   
                 </div>
-                <div>
+                <div >
                   <Button text="Sign In" className={style.nav_btn}/>
                   <Button text="Sign Up" className={style.nav_btn} />
                 </div>

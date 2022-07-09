@@ -11,6 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Shipam is an Ecommerce platform that enable users to buy product and services online. 
 This project was created by Micheal Evboumwan on the 7th of july, 2022.
 
+Check out project by clicking [here](https://calm-conkies-8fa4b2.netlify.app/)
 
 ## Available Scripts
 

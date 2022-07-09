@@ -32,8 +32,8 @@ nav > div:nth-child(2) > ul {
 nav > div:nth-child(2) > ul > li > a {
     text-decoration: none;
     position: relative;
-    font-size: 18px;
-    font-weight: 500;
+    color: var(--main--color);
+    
 }
 nav > div:nth-child(2) > ul > li > a::after {
     position:absolute;
@@ -60,6 +60,7 @@ nav > div:nth-child(3) {
     color: white;
     width: 85px;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 
@@ -97,14 +98,15 @@ nav > div:nth-child(2) > ul > li >  span{
         right: 0;
         width:100%;
         z-index:10000;
-        /* background-color: rgba(43, 61, 94, 0.15); */
+    }
+    nav > div:nth-child(2) > ul > li {
+        width: fit-content;
     }
     nav > div:nth-child(2) > ul > li >  span{
         display: flex;
         font-size: 50px;
         cursor: pointer;
     }
-
     nav > div:nth-child(2) > ul {
         position: absolute;
         display: flex;
@@ -121,10 +123,17 @@ nav > div:nth-child(2) > ul > li >  span{
         font-size: 20px;
         text-align: left;
     }
+    .nav_btn {
+        border: none;
+        padding: 13px 10px;
+        background-color:white;
+        color:var(--main--color);
+        width: 85px;
+        border-radius: 7px;
+    }
     nav > div:nth-child(3) {
         display: none;
     }
-
     nav > div:nth-child(2) > div{
         display: inline-block;
         width:100%;
@@ -134,18 +143,22 @@ nav > div:nth-child(2) > ul > li >  span{
         top:0;
         left:0;
     }
-
     .RWD_Nav_Menu {
         transform: translate(0) !important;
         display: flex !important;
         flex-direction: column;
     }
-    .RWD_Nav_Menu > span{
-        z-index: 2;
-    }
     .RWD_Nav_Menu > ul{
         align-self: flex-end;
         z-index: 1;
+    }
+    .resBtn {
+        margin-top:auto;
+        padding:10px 0px
+    }
+    .resBtn > span {
+        display: flex;
+        gap: 20px;
     }
     
 }
