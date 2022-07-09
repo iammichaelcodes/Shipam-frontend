@@ -12,9 +12,14 @@ const Header = () => {
     const track = "/track";
 
     //usestate hooks
-    const [menu, setMenu] = useState(false);
+    const [navMenu, setNavMenu] = useState(false);
 
-
+    const handleNavMenu = () => {
+        setNavMenu(true);
+    }
+    const closeNavMenu = () => {
+        setNavMenu(!setNavMenu);
+    }
     
     return ( 
         <Fragment>
@@ -24,11 +29,15 @@ const Header = () => {
                       <img src={logo} alt="shipam-logo"/>
                     </Link>
                     <span className={style.Menu_Icon}>
-                        <img src={hamburger} alt="hamburger" />
+                        <img src={hamburger} alt="hamburger"  onClick={handleNavMenu}/>
                     </span>
                 </div>
-                <div>
+                <div className={ `${navMenu ? style.RWD_Nav_Menu : ""} `}>
+                    <div></div>
                     <ul>
+                        <li>
+                            <span onClick={closeNavMenu}>&times;</span>
+                        </li>
                        <li>
                           <Link to={track}>
                              Track
@@ -55,6 +64,7 @@ const Header = () => {
                           </Link>
                        </li>
                     </ul>
+
                 </div>
                 <div>
                   <Button text="Sign In" className={style.nav_btn}/>
