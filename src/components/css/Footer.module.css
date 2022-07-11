@@ -26,6 +26,10 @@
     cursor: pointer;
     margin-left: 30px;
 }
+.getStarted_btn:hover {
+    background-color:var(--btn-color1);
+    color: #fff;
+}
 .getStarted_Div > a  {
     display: flex;
  }
@@ -104,10 +108,14 @@
     background-color: #fff;
     color:var(--main--color);
     width: 70px;
-    border-radius: 12px;
+    border-radius:5px;
     cursor: pointer;
     font-size: 12px;
     height: 30px;
+}
+.footerBtn:hover {
+    background-color:var(--btn-color1);
+    color: #fff;
 }
 .newsletterIcon_Div > span {
     align-items: center;
