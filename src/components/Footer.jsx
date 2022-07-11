@@ -25,11 +25,12 @@ const Footer = () => {
                     <div>
                         <div className={style.newsletterIcon_Div}>
                             <p>Subscribe to Our Newsletters </p>
+                            
                             <input type="text" placeholder="Your Email here"/> <Button  text="Subscribe" className={style.footerBtn}/>
-                            <span>
-                                <img src={Instagram} alt="instagramIcon" /> <img src={Twitter} alt="twittericon" />
-                            </span>
                         </div>
+                        <span className={style.vectorIcon}>
+                            <img src={Instagram} alt="instagramIcon" /> <img src={Twitter} alt="twittericon" />
+                        </span>
                         <div className={style.menulist}>
                             <div className={style.menulist1}> 
                                 <div>Tracking</div>
@@ -43,6 +44,9 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                    <span>
+                        <p>Terms & Condition</p>  <p>Privacy Policy</p> 
+                    </span>
                 </div>
            </div>
          </>
