@@ -1,3 +1,44 @@
 .home {
     position: relative;
 }
+.home > .bannerDiv {
+    height:70vh;
+    display: flex;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+}
+.bannerDiv > .bannerCon {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 5%;
+    padding-top: 5%;
+}
+.bannerDiv > .bannerCon > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--btn-color1);
+    width: 100%;
+    
+}
+.bannerDiv > .bannerCon > div:nth-child(1) > h1 {
+    width: 200px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: var(--main--color);
+    
+}
+.bannerDiv > .bannerCon > div:nth-child(1) > p {
+    display: flex;
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+    width: 400px
+}
