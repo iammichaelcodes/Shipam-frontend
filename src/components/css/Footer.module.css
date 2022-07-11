@@ -45,12 +45,17 @@
     flex-direction: column;
     gap: 20px;
 } 
+.menulist1 > div {
+    cursor: pointer;
+}
+.menulist2  > div {
+    cursor: pointer;
+}
 .footerDiv > div > div:nth-child(2) {
     display: flex;
     justify-content: space-between;
     padding:10px;
     padding-top: 3%;
-    cursor: pointer;
     margin-bottom: 20px;
     padding-left: 5%;
     padding-right: 5%;
@@ -61,6 +66,8 @@
       align-items:flex-start;
       gap:10px;
       margin-right:auto;
+      position: relative;
+      left: 8%;
       
 }
 .vectorIcon >  img {
@@ -68,6 +75,7 @@
     display: flex;
     justify-content: center;
     height: 20px;
+    cursor: pointer;
 }
 .footerDiv > div > div:nth-child(2) > span {
     display: flex;
@@ -83,7 +91,7 @@
     border-radius: 12px;
     border: 1px solid var(--btn-color1);
     padding: 7px;
-    width: max(190px,80%);
+    
 }
 .newsletterIcon_Div > input:focus {
     outline: none;
