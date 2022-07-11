@@ -83,7 +83,7 @@
     border-radius: 12px;
     border: 1px solid var(--btn-color1);
     padding: 7px;
-    width: min(190px,80%);
+    width: max(190px,80%);
 }
 .newsletterIcon_Div > input:focus {
     outline: none;
@@ -151,6 +151,9 @@
       flex-direction: column;
       gap: 20px;
     }
+    .newsletterIcon_Div {
+        width: 100%;
+    }
     .newsletterIcon_Div > p {
         margin-bottom: -3px;
     }
@@ -174,7 +177,11 @@
     }
     .newsletterIcon_Div > input {
      
-        width: min(350px,80%) !important;
+        /* width: min(350px,80%); */
+        margin-bottom:-5px;
+    }
+    .newsletterIcon_Div  > .footerBtn {
+        margin-top: -5px;
     }
 
 }
