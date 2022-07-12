@@ -27,7 +27,7 @@ export const ResizeObserver = ({children}) => {
 
 }
 
-export const useviewport = () => {
+export const Useviewport = () => {
     return(
         useContext(ResizeContext)
     )

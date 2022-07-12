@@ -2,11 +2,11 @@ import { Fragment } from "react";
 import style from "../views/css/Home.module.css"; 
 import location from "../assets/images/locationTrack.png";
 import { Button } from "../components";
-import { useviewport } from "../useviewPorts";
+import { Useviewport } from "../useviewPorts";
 
 const Home = () =>{
 
-    const {width} = useviewport();
+    const {width} = Useviewport();
     console.log(width);
  
     return(
