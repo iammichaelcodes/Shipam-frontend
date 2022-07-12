@@ -12,24 +12,24 @@ const Home = () =>{
     return(
         <Fragment>
             <div className={style.home}>
-                <section className={style.bannerDiv} >
+                <section className={ ` ${style.bannerDiv} ${width < 886 ? `${style.bannerDiv_respon}` : "" }`} >
                     <div className={style.bannerCon}>
                         <div>
-                           <h1>Find and Compare Discounted shipping rates</h1> 
-                           <p> Use Shipam to compare prices from multiple delivery providers without sign up. 
+                           <h1 className={`${width < 500 ? `${style.bannerHeader_tag}` : "" }`}>Find and Compare Discounted shipping rates</h1> 
+                           <p className={`${width < 500 ? `${style.bannerParagraph_tag}` : "" }`}> Use Shipam to compare prices from multiple delivery providers without sign up. 
                              Save up to 40% on your shipping cost with Shipbubble</p>
                         </div>
-                       <div className={`${width < 767 ? `responDiv` : "" } `}>
-                              <div>
+                        <div className={ `${width < 886 ? `${style.responDiv_height}` : ""}`}>
+                              <div  className={`${width < 886 ? `${style.responDiv} ` : "" } `}>
                                     <div>
                                             <p>Local</p>
                                             <div>
                                                 <div>
-                                                    <img  src={location} alt="location"/>
+                                                    <img  src={location} alt="location" className={`${width < 886 ?`${style.locationIcon_respon1}`  : "" }`}/>
                                                     <input type="text" placeholder="Enter Pickup Address"/>
                                                 </div>
                                                 <div>
-                                                    <img  src={location} alt="location"/>
+                                                    <img  src={location} alt="location" className={`${width < 886 ?`${style.locationIcon_respon2}`  : "" }`}/>
                                                     <input type="text"  placeholder="Enter Delivery Address" />
                                                 </div>
                                             </div>
@@ -45,7 +45,7 @@ const Home = () =>{
                                             </div>
                                     </div>
                               </div>
-                               <div className={style.priceBtnDiv}>
+                               <div className={`${style.priceBtnDiv} ${width < 886 ? `${style.priceBtnDiv_respon}`: ""}`}>
                                  <Button text="Check Prices"  className={style.priceBtn}/>
                                </div> 
                         </div>

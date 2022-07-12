@@ -56,7 +56,7 @@
     gap: 30px;
     padding: 20px 30px;
     justify-content: center;
-    height: 28vh;
+    height:28vh;
     box-shadow: 1px 1px 41px 4px rgba(0, 0, 0, 0.25);
     position: relative;
     background-color: #fff;
@@ -123,10 +123,35 @@
     left:27.5%;
     top:42%;
 }
+/***** Responsiveness design  starts here****/
 .responDiv {
-    display: flex;
-    flex-direction:column;
-    gap: 10px;
+    display: flex !important;
+    flex-direction:column !important;
+    justify-content: center !important;
+    align-self: center !important;
+    gap: 30px !important;
+}
+.responDiv_height {
+    height: auto !important;
+}
+.bannerDiv_respon {
+    margin-bottom: 120px !important;
+}
+.locationIcon_respon1 {
+    left: 9% !important;
+    top: 26.5% !important;
+}
+.locationIcon_respon2 {
+    left: 55% !important;
+    top: 26.5% !important;
+}
+.bannerHeader_tag {
+  font-size: 26px !important;
+  width: 280px !important;
+}
+.bannerParagraph_tag {
+    font-size: 9px !important;
+    width: 340px !important;
 }
 .priceBtn {
     border: none;
@@ -141,4 +166,14 @@
 .priceBtnDiv {
     justify-content: flex-end !important;
     padding-right: 5px;
+}
+.priceBtnDiv_respon {
+    justify-content: center !important;
+}
+@media screen  and (max-width : 886px ) {
+    .bannerDiv > .bannerCon > div:nth-child(2) > div > div:nth-child(2) > div {
+        flex-direction: row !important;
+        display: flex !important;
+        gap: 55px !important;
+    }
 }
