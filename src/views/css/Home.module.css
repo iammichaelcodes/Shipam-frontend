@@ -10,13 +10,15 @@
     background-size:cover;
     background-position: center;
     text-align: center;
+    margin-bottom: 50px;
+    border: 1px solid #f5f5f5;
 }
 .bannerDiv > .bannerCon {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     padding: 10px 5%;
     padding-top: 5%;
@@ -42,25 +44,23 @@
     font-size: 12px;
     flex-direction: column;
     align-self: center;
-    width: 400px;
+    width: 450px;
     font-size: 12px;
     color: var(--main--color);
     padding: 3px;
-    font-weight: 300;
+    font-weight: bold;
 }
 .bannerDiv > .bannerCon > div:nth-child(2)  {
     display: flex;
-    flex-direction: row;
-    gap: 80px;
-    padding: 5px;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 30px;
     justify-content: center;
-    height: 30vh;
-    margin: auto;
+    height: 28vh;
     box-shadow: 1px 1px 41px 4px rgba(0, 0, 0, 0.25);
     position: relative;
     background-color: #fff;
-    width: max(100px,80%);
-    padding-top: 20px;
+    border-radius: 10px;
 
 }
 .bannerDiv > .bannerCon > div:nth-child(2) > div p {
@@ -71,56 +71,74 @@
 }
 .bannerDiv > .bannerCon > div:nth-child(2) > div {
     display: flex;
-    flex-direction:column;
-    gap:10px
+    flex-direction:row;
+    justify-content: center;
+    gap:100px
 }
 .bannerDiv > .bannerCon > div:nth-child(2) > div > div {
     display: flex;
-    flex-direction:row;
-    gap: 30px;
+    flex-direction:column;
+    gap:15px;
 }
-.bannerDiv > .bannerCon > div:nth-child(2) > div > div > input {
+.bannerDiv > .bannerCon > div:nth-child(2) > div > div > div {
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
+    
+    justify-content: center;
+}
+.bannerDiv > .bannerCon > div:nth-child(2) > div > div > input, select {
     height: 35px;
     border: 1px solid var(--btn-color1);
     border-radius: 5px;
     padding: 10px;
     font-size: 10px;
 }
-.bannerDiv > .bannerCon > div:nth-child(2) > div > div > input:focus {
+.bannerDiv > .bannerCon > div:nth-child(2) > div > div > input:focus, select:focus {
     outline: none;
 }
-.bannerDiv > .bannerCon > div:nth-child(2) > div > div > div input {
+.select_item {
+    cursor: pointer;
+    color: #f5f5f5;
+}
+
+.bannerDiv > .bannerCon > div:nth-child(2) > div > div > div input, input:focus {
     height: 35px;
     border: 1px solid var(--btn-color1);
     border-radius: 5px;
     padding: 10px;
     font-size: 10px;
     padding-left: 20px;
+    outline: none;
 }
-.bannerDiv > .bannerCon > div:nth-child(2) > div > div >div:nth-child(1) > img {
+.bannerDiv > .bannerCon > div:nth-child(2) >div > div > div >div:nth-child(1) > img {
     height: 12px;
     position: absolute;
-    left: 8.5%;
-    top: 47%;
+    left: 4.5%;
+    top: 42%;
 }
-.bannerDiv > .bannerCon > div:nth-child(2) > div > div > div:nth-child(2) > img {
+.bannerDiv > .bannerCon > div:nth-child(2) > div > div > div > div:nth-child(2) > img {
     height: 12px;
     position: absolute;
-    left:29.5%;
-    top: 47%;
+    left:27.5%;
+    top:42%;
 }
-.bannerDiv > .bannerCon > div:nth-child(2) > div > div > div >input:focus {
-       outline: none;
-}
-
-.bannerDiv > .bannerCon > div:nth-child(2) > div > img {
-    height:20px;
-    position: absolute;
-    left: 10%;
-}
-
 .responDiv {
     display: flex;
     flex-direction:column;
     gap: 10px;
+}
+.priceBtn {
+    border: none;
+    padding: 13px 13px;
+    background-color:var(--main--color);
+    color:#fff;
+    width: 100px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 10px;
+}
+.priceBtnDiv {
+    justify-content: flex-end !important;
+    padding-right: 5px;
 }

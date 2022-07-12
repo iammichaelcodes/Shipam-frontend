@@ -20,33 +20,39 @@ const Home = () =>{
                              Save up to 40% on your shipping cost with Shipbubble</p>
                         </div>
                        <div className={`${width < 767 ? `responDiv` : "" } `}>
-                              <div className={style.locationTracker}>
-                                    <p>Local</p>
-                                    <div >
-                                        <div>
-                                            <img  src={location} alt="location"/>
-                                            <input type="text" placeholder="Enter Pickup Address"/>
-                                        </div>
-                                        <div>
-                                            <img  src={location} alt="location"/>
-                                            <input type="text"  placeholder="Enter Delivery Address" />
-                                        </div>
+                              <div>
+                                    <div>
+                                            <p>Local</p>
+                                            <div>
+                                                <div>
+                                                    <img  src={location} alt="location"/>
+                                                    <input type="text" placeholder="Enter Pickup Address"/>
+                                                </div>
+                                                <div>
+                                                    <img  src={location} alt="location"/>
+                                                    <input type="text"  placeholder="Enter Delivery Address" />
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div>
+                                            <p>International</p>
+                                            <div>
+                                                <input type="text" placeholder="Parcel Weight(kg)"/>
+                                                <select>
+                                                    <option value="0" className={style.select_item}>Select Category</option>
+                                                    <option value="1">Category</option>
+                                                </select>
+                                            </div>
                                     </div>
                               </div>
-                              <div className={style.locationTracker}>
-                                <p>International</p>
-                                <div>
-                                    <input type="text" placeholder="Parcel Weight(kg)"/>
-                                    <select>
-                                        
-                                    </select>
-                                </div>
-                              </div>
+                               <div className={style.priceBtnDiv}>
+                                 <Button text="Check Prices"  className={style.priceBtn}/>
+                               </div> 
                         </div>
                     </div>
                 </section>
-                <section>
-
+                <section className={style.courierNetDiv}>
+                    
                 </section>
             </div>
             
