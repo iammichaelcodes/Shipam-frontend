@@ -5,6 +5,7 @@ import {Home} from './views/index';
 import { Footer, Header } from './components/index';
 import { BrowserRouter  as Router,Routes, Route } from 'react-router-dom';
 
+
 function App() {
   return (
     <Fragment>

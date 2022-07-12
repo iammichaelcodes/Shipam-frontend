@@ -28,7 +28,7 @@
     margin-bottom: 10px;
 }
 .bannerDiv > .bannerCon > div:nth-child(1) > h1 {
-    width: 320px;
+    width: 340px;
     flex-direction: column;
     display: flex;
     align-self: center;
@@ -51,39 +51,76 @@
 .bannerDiv > .bannerCon > div:nth-child(2)  {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 80px;
     padding: 5px;
+    justify-content: center;
+    height: 30vh;
     margin: auto;
-    height:30vh ;
     box-shadow: 1px 1px 41px 4px rgba(0, 0, 0, 0.25);
     position: relative;
     background-color: #fff;
+    width: max(100px,80%);
+    padding-top: 20px;
+
 }
-.bannerDiv > .bannerCon > div:nth-child(2) > div > p {
+.bannerDiv > .bannerCon > div:nth-child(2) > div p {
     color: var(--main--color);
     font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 20px;
+    font-weight: 500px;
+    margin-bottom: 10px;
 }
 .bannerDiv > .bannerCon > div:nth-child(2) > div {
     display: flex;
+    flex-direction:column;
+    gap:10px
+}
+.bannerDiv > .bannerCon > div:nth-child(2) > div > div {
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+}
+.bannerDiv > .bannerCon > div:nth-child(2) > div > div > input {
+    height: 35px;
+    border: 1px solid var(--btn-color1);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 10px;
+}
+.bannerDiv > .bannerCon > div:nth-child(2) > div > div > input:focus {
+    outline: none;
+}
+.bannerDiv > .bannerCon > div:nth-child(2) > div > div > div input {
+    height: 35px;
+    border: 1px solid var(--btn-color1);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 10px;
+    padding-left: 20px;
+}
+.bannerDiv > .bannerCon > div:nth-child(2) > div > div >div:nth-child(1) > img {
+    height: 12px;
+    position: absolute;
+    left: 8.5%;
+    top: 47%;
+}
+.bannerDiv > .bannerCon > div:nth-child(2) > div > div > div:nth-child(2) > img {
+    height: 12px;
+    position: absolute;
+    left:29.5%;
+    top: 47%;
+}
+.bannerDiv > .bannerCon > div:nth-child(2) > div > div > div >input:focus {
+       outline: none;
+}
+
+.bannerDiv > .bannerCon > div:nth-child(2) > div > img {
+    height:20px;
+    position: absolute;
+    left: 10%;
+}
+
+.responDiv {
+    display: flex;
+    flex-direction:column;
     gap: 10px;
-    flex-direction: row
-}
-.bannerDiv > .bannerCon > div:nth-child(2) > div > input {
-    height: 35px;
-    border: 1px solid var(--btn-color1);
-    border-radius: 5px;
-}
-.bannerDiv > .bannerCon > div:nth-child(2) > div >.inputIcons > input {
-    height: 35px;
-    border: 1px solid var(--btn-color1);
-    border-radius: 5px;
-}
-.bannerDiv > .bannerCon > div:nth-child(2) > div >img {
-    
-}
-.locationTracker {
-   display: flex;
-   flex-direction: column;
 }

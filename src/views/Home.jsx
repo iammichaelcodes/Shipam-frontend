@@ -1,10 +1,14 @@
 import { Fragment } from "react";
 import style from "../views/css/Home.module.css"; 
-import bannerImg from "../assets/images/BannerDiv.png";
 import location from "../assets/images/locationTrack.png";
 import { Button } from "../components";
+import { useviewport } from "../useviewPorts";
 
 const Home = () =>{
+
+    const {width} = useviewport();
+    console.log(width);
+ 
     return(
         <Fragment>
             <div className={style.home}>
@@ -15,23 +19,29 @@ const Home = () =>{
                            <p> Use Shipam to compare prices from multiple delivery providers without sign up. 
                              Save up to 40% on your shipping cost with Shipbubble</p>
                         </div>
-                        <div>
-                             <div className={style.locationTracker}>
-                                <p>Local</p>
-                                    <div className={style.inputIcons}>
-                                            <img src={location} alt="location" />
-                                        
-                                        <input type="text" />
+                       <div className={`${width < 767 ? `responDiv` : "" } `}>
+                              <div className={style.locationTracker}>
+                                    <p>Local</p>
+                                    <div >
+                                        <div>
+                                            <img  src={location} alt="location"/>
+                                            <input type="text" placeholder="Enter Pickup Address"/>
+                                        </div>
+                                        <div>
+                                            <img  src={location} alt="location"/>
+                                            <input type="text"  placeholder="Enter Delivery Address" />
+                                        </div>
                                     </div>
-                               
-                                <input type="text" />
-                             </div>
-                             <div  className={style.locationTracker}>
+                              </div>
+                              <div className={style.locationTracker}>
                                 <p>International</p>
-                                <input type="text" />
-                                <input type="text" />
-                             </div>
-                         
+                                <div>
+                                    <input type="text" placeholder="Parcel Weight(kg)"/>
+                                    <select>
+                                        
+                                    </select>
+                                </div>
+                              </div>
                         </div>
                     </div>
                 </section>
