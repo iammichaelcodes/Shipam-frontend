@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     gap:50px;
+    flex-wrap: wrap;
 }
 .home > .bannerDiv {
     height:70vh;
@@ -180,18 +181,18 @@
     }
 }
 /********
- COURIER NETWORK SESSION 
+ COURIER NETWORK SESSION + GLOBAL CLASSES USED FOR  DIFFERENT SECTIONS
  *****/
 .courierDiv {
     display: flex;
     width: 100%;
     padding: 10px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .courierDiv > div  {
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding: 10px 5%;
     gap: 100px;
     align-items: center;
@@ -229,10 +230,15 @@
 .sessionImages {
     height: 340px;
 }
+.courierDivList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 .courierDivList  > h3 {
   font-weight: 600;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .courierDivList > div {
     display: flex;
@@ -265,13 +271,25 @@ END OF THIS SESSION ...............
     width: 100%;
     padding: 10px;
     justify-content: center;
+    flex-wrap: wrap;
 }.partnerDiv > div {
     display: flex;
     flex-direction: row;
-    width: 100%;
     padding: 10px 5%;
     gap: 100px;
     align-items: center;
+}
+.headerDIV {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.headerDIV > h2 {
+    color: var(--main--color);
+    font-size: 30px;
+    font-weight: bold;
 }
 /******* 
 END OF THIS SESSION 
@@ -286,11 +304,18 @@ ANALYTICS SESSION
     width: 100%;
     padding: 10px;
     justify-content: center;
+    flex-wrap: wrap;
 }.AnalyticsDiv > div {
     display: flex;
     flex-direction: row;
-    width: 100%;
     padding: 10px 5%;
     gap: 100px;
     align-items: center;
+}
+.whySection {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
 }

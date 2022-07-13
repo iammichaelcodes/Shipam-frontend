@@ -3,7 +3,14 @@ import style from "../views/css/Home.module.css";
 import location from "../assets/images/locationTrack.png";
 import courier from "../assets/images/CourierNetwork.png";
 import session3Image from "../assets/images/ShippingPartner.png";
+import session4Image from "../assets/images/Analytics.png";
+import cashflow from "../assets/images/cashflowIcon.png";
+import control from "../assets/images/control.png";
+import barchat from "../assets/images/barChatIcon.png";
 import Ease from "../assets/images/EaseOfAcess.png";
+import Deliver from "../assets/images/ion_bicycle.png";
+import Pay from "../assets/images/Pay.png";
+import Search from "../assets/images/Search.png";
 import Flexibility from "../assets/images/flexibility.png";
 import Efficiency from "../assets/images/Efficiency.png";
 import { Button } from "../components";
@@ -99,7 +106,7 @@ const Home = () =>{
                 <section className={style.partnerDiv}>
                    <div>
                         <div>
-                            <div>
+                            <div className={style.headerDIV}>
                                 <h2>Dedicated Shipping Partner</h2>
                                 <p>
                                   At little to no cost, have full control of your orders with us. Schedule orders, 
@@ -110,18 +117,18 @@ const Home = () =>{
                                 <h3>Here's what you get: </h3>
                                 <div>
                                     <div className={style.icon}>
-                                        <img src={Ease} alt="ease of access icon" className={style.courierDivListIcon} />
-                                        <h3>Ease of Access</h3>
+                                        <img src={Search} alt="ease of access icon" className={style.courierDivListIcon} />
+                                        <h3>Search</h3>
                                             <p>Multiple delivery options all in one place</p>   
                                     </div>
                                     <div className={style.icon}>
-                                        <img src={Flexibility} alt="flexibility icon" className={style.courierDivListIcon} />
-                                        <h3>Flexibility</h3>
+                                        <img src={Pay} alt="flexibility icon" className={style.courierDivListIcon} />
+                                        <h3>Pay</h3>
                                             <p>Tailor your delivery experience to what you prioritize, whether cost or delivery time.</p>   
                                     </div>
                                     <div className={style.icon}>
-                                        <img src={Efficiency} alt="efficiency icon" className={style.courierDivListIcon} />
-                                        <h3>Efficiency</h3>
+                                        <img src={Deliver} alt="efficiency icon" className={style.courierDivListIcon} />
+                                        <h3>Deliver</h3>
                                         <p>Manage how your products are delivered in little to no time.</p>   
                                     </div>
                                 </div>
@@ -135,29 +142,28 @@ const Home = () =>{
                 <section className={style.AnalyticsDiv}>
                       <div>
                             <div>
-                                <img src={courier} alt="shipping Options" className={style.sessionImages} />
+                                <img src={session4Image} alt="shipping Options" className={style.sessionImages} />
                             </div>
                             <div>
-                                <div>
-                                    <h2>Multi-Courier Network</h2>
-                                    <p>Get access to discounted rates from 
-                                    reliable shipping providers through our multi-courier network.</p>
+                                <div className={style.headerDIV}>
+                                    <h2>Analytics</h2>
+                                    <p>Understand your business better, and see what the data behind your deliveries say..</p>
                                 </div>
                                 <div className={style.courierDivList}>
                                     <h3>Here's what you get: </h3>
                                     <div>
                                         <div className={style.icon}>
-                                            <img src={Ease} alt="ease of access icon" className={style.courierDivListIcon} />
+                                            <img src={cashflow} alt="ease of access icon" className={style.courierDivListIcon} />
                                             <h3>Ease of Access</h3>
                                                 <p>Multiple delivery options all in one place</p>   
                                         </div>
                                         <div className={style.icon}>
-                                            <img src={Flexibility} alt="flexibility icon" className={style.courierDivListIcon} />
+                                            <img src={barchat} alt="flexibility icon" className={style.courierDivListIcon} />
                                             <h3>Flexibility</h3>
                                                 <p>Tailor your delivery experience to what you prioritize, whether cost or delivery time.</p>   
                                         </div>
                                         <div className={style.icon}>
-                                            <img src={Efficiency} alt="efficiency icon" className={style.courierDivListIcon} />
+                                            <img src={control} alt="efficiency icon" className={style.courierDivListIcon} />
                                             <h3>Efficiency</h3>
                                             <p>Manage how your products are delivered in little to no time.</p>   
                                         </div>
@@ -166,14 +172,21 @@ const Home = () =>{
                             </div>
                       </div>
                 </section>
-                <section >
+                <section className={style.whySection} >
                     <div>
                          <div>
                             <h1>Why Shipam?</h1>
-                             <p></p>
+                             <p>
+                                Save time, money when shipping products to your customers. 
+                                Find and compare discounted shipping rates from delivery providers in Africa.
+                             </p>
                          </div>
                          <div>
-                             
+                             <div>
+                                  
+                                <h3>Expand your reach & increase sales</h3>
+                                <p>Connect to multiple delivery providers and deliver your orders nationwide and international</p>
+                             </div>
                          </div>
                     </div>
                 </section>
