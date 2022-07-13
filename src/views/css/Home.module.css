@@ -179,7 +179,9 @@
         gap: 55px !important;
     }
 }
-/******** COURIER NETWORK SESSION *****/
+/********
+ COURIER NETWORK SESSION 
+ *****/
 .courierDiv {
     display: flex;
     width: 100%;
@@ -203,7 +205,6 @@
     font-size: 25px;
     font-weight: bold;
     padding: 3px;
-    border: 1px solid black;
 }
 .courierDiv > div  > div:nth-child(2) {
     display: flex;
@@ -216,6 +217,7 @@
     gap: 30px;
     flex-direction: column;
     padding-bottom: 10px;
+    margin-bottom: 10px;
     
 }
 .courierDiv > div  > div:nth-child(2) > div:nth-child(2) > div > h2 {
@@ -223,20 +225,72 @@
      font-size: 30px;
      font-weight: bold;
 }
-.courierDiv > div  > div:nth-child(2) > div > img {
+
+.sessionImages {
     height: 340px;
+}
+.courierDivList  > h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 .courierDivList > div {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 32px;
 }
-.courierDivList > div >div:nth-child(1) >img {
-   height: 60px;
+.courierDivListIcon {
+   height: 50px;
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: center;
 }
-.courierDivList > div >div:nth-child(2) >img {
-    height: 60px;
+.icon > h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
-.courierDivList > div >div:nth-child(3) >img {
-    height: 60px;
+.icon> p {
+    font-size: 12px;
+    font-weight: 500;
+    width: 180px;
+}
+/**** 
+END OF THIS SESSION ...............
+ ******/
+
+/***** SHIPPING PARTNER SESSION ****/
+.partnerDiv {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+}.partnerDiv > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 5%;
+    gap: 100px;
+    align-items: center;
+}
+/******* 
+END OF THIS SESSION 
+*****/
+
+/****** 
+ANALYTICS SESSION
+ *************************/
+
+ .AnalyticsDiv {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+}.AnalyticsDiv > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 5%;
+    gap: 100px;
+    align-items: center;
 }
