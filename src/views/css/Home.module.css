@@ -1,5 +1,8 @@
 .home {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
 }
 .home > .bannerDiv {
     height:70vh;
@@ -10,7 +13,6 @@
     background-size:cover;
     background-position: center;
     text-align: center;
-    margin-bottom: 50px;
     border: 1px solid #f5f5f5;
 }
 .bannerDiv > .bannerCon {
@@ -176,4 +178,65 @@
         display: flex !important;
         gap: 55px !important;
     }
+}
+/******** COURIER NETWORK SESSION *****/
+.courierDiv {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+.courierDiv > div  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 5%;
+    gap: 100px;
+    align-items: center;
+}
+.courierDiv > div  > div > h2 {
+    width:410px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: var(--main--color);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 3px;
+    border: 1px solid black;
+}
+.courierDiv > div  > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+}
+.courierDiv > div  > div:nth-child(2) > div:nth-child(2) > div {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding-bottom: 10px;
+    
+}
+.courierDiv > div  > div:nth-child(2) > div:nth-child(2) > div > h2 {
+     color: var(--main--color);
+     font-size: 30px;
+     font-weight: bold;
+}
+.courierDiv > div  > div:nth-child(2) > div > img {
+    height: 340px;
+}
+.courierDivList > div {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.courierDivList > div >div:nth-child(1) >img {
+   height: 60px;
+}
+.courierDivList > div >div:nth-child(2) >img {
+    height: 60px;
+}
+.courierDivList > div >div:nth-child(3) >img {
+    height: 60px;
 }

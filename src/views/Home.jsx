@@ -1,6 +1,10 @@
 import { Fragment } from "react";
 import style from "../views/css/Home.module.css"; 
 import location from "../assets/images/locationTrack.png";
+import courier from "../assets/images/CourierNetwork.png";
+import Ease from "../assets/images/EaseOfAcess.png";
+import Flexibility from "../assets/images/flexibility.png";
+import Efficiency from "../assets/images/Efficiency.png";
 import { Button } from "../components";
 import { Useviewport } from "../useviewPorts";
 
@@ -51,8 +55,50 @@ const Home = () =>{
                         </div>
                     </div>
                 </section>
-                <section className={style.courierNetDiv}>
+                <section className={style.courierDiv}>
+                     <div>
+                          <div>
+                             <h2>Features you deserve for a 
+                            hassle free delivery experience</h2>
+                          </div>
+                           <div>
+                               <div>
+                                    <img src={courier} alt="shipping Options" />
+                               </div>
+                               <div>
+                                   <div>
+                                      <h2>Multi-Courier Network</h2>
+                                      <p>Multi-Courier Network Get access to discounted rates from 
+                                        reliable shipping providers through our multi-courier network.</p>
+                                   </div>
+                                   <div className={style.courierDivList}>
+                                        <h3>Here's what you get </h3>
+                                        <div>
+                                           <div>
+                                               <img src={Ease} alt="ease of access icon" />
+                                                <h3>Ease of Access</h3>
+                                                 <p>Multiple delivery options all in one place</p>   
+                                           </div>
+                                           <div>
+                                               <img src={Flexibility} alt="flexibility icon" />
+                                                <h3>Flexibility</h3>
+                                                 <p>Tailor your delivery experience to what you prioritize, whether cost or delivery time.</p>   
+                                           </div>
+                                           <div>
+                                               <img src={Efficiency} alt="efficiency icon" />
+                                                <h3>Efficiency</h3>
+                                                <p>Manage how your products are delivered in little to no time.</p>   
+                                           </div>
+                                        </div>
+                                   </div>
+                               </div>
+                           </div>
+                     </div>
+                </section>
+                <section className={style.partnerDiv}>
+                   <div>
                     
+                   </div>
                 </section>
             </div>
             
