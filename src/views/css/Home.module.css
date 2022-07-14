@@ -1,5 +1,8 @@
 .home {
     position: relative;
+    flex-direction: column;
+    display: flex;
+    gap: 50px;
 }
 .home > .bannerDiv {
     height:70vh;
