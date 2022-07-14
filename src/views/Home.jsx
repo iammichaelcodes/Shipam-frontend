@@ -208,7 +208,7 @@ const Home = () =>{
                     <div>
                         <div>
                             <div>
-                                <img src={PartnerLogos} className={style.sessionImages} />
+                                <img src={PartnerLogos} alt="companies icons" className={style.sessionImages} />
                             </div>
                             <div className={style.headerDIV}>
                                 <h2>We have partnered with some of the best courier</h2>
