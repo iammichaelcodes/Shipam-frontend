@@ -10,6 +10,10 @@ import barchat from "../assets/images/barChatIcon.png";
 import Ease from "../assets/images/EaseOfAcess.png";
 import Deliver from "../assets/images/ion_bicycle.png";
 import Pay from "../assets/images/Pay.png";
+import PartnerLogos from "../assets/images/partnerLogos.png";
+import Growth from "../assets/images/carbon_growth.png";
+import DeliveryParcel from "../assets/images/carbon_delivery-parcel.png";
+import HealthIcons from "../assets/images/healthicons_call-centre.png";
 import Search from "../assets/images/Search.png";
 import Flexibility from "../assets/images/flexibility.png";
 import Efficiency from "../assets/images/Efficiency.png";
@@ -183,11 +187,45 @@ const Home = () =>{
                          </div>
                          <div>
                              <div>
-                                  
+                                  <div><img  src={Growth} alt="carbon-growth" className={style.whyShipam_Images}/></div>
+                                <h3>Expand your reach & increase sales</h3>
+                                <p>Connect to multiple delivery providers and deliver your orders nationwide and international</p>
+                             </div>
+                             <div>
+                                <div><img  src={DeliveryParcel} alt="carbon-growth" className={style.whyShipam_Images}/></div>
+                                <h3>Expand your reach & increase sales</h3>
+                                <p>Connect to multiple delivery providers and deliver your orders nationwide and international</p>
+                             </div>
+                             <div>
+                                <div><img  src={HealthIcons} alt="carbon-growth" className={style.whyShipam_Images}/></div>
                                 <h3>Expand your reach & increase sales</h3>
                                 <p>Connect to multiple delivery providers and deliver your orders nationwide and international</p>
                              </div>
                          </div>
+                    </div>
+                </section>
+                <section className={style.lastSection}>
+                    <div>
+                        <div>
+                            <div>
+                                <img src={PartnerLogos} className={style.sessionImages} />
+                            </div>
+                            <div className={style.headerDIV}>
+                                <h2>We have partnered with some of the best courier</h2>
+                                <p> We have partnered with the most reliable couriers - Through us, 
+                                  you can deliver your products through the most trusted couriers in Africa, 
+                                  at no extra cost. 
+                                </p>
+                                <p>View all supported couriers</p>
+                            </div>
+                        </div>
+                        <div className={style.headerDIV2}>
+                            <h2>Frequently Asked Questions (FAQs)</h2>
+                            <p>
+                                Here we’ll share informative guides, inspirational case studies and latest from the Shipbubble office.
+                            </p>
+                            
+                        </div>
                     </div>
                 </section>
             </div>

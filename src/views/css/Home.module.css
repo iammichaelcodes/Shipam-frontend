@@ -1,9 +1,5 @@
 .home {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    gap:50px;
-    flex-wrap: wrap;
 }
 .home > .bannerDiv {
     height:70vh;
@@ -14,6 +10,7 @@
     background-size:cover;
     background-position: center;
     text-align: center;
+    margin-bottom: 20px;
     border: 1px solid #f5f5f5;
 }
 .bannerDiv > .bannerCon {
@@ -188,7 +185,7 @@
     width: 100%;
     padding: 10px;
     justify-content: center;
-    flex-wrap: wrap;
+  
 }
 .courierDiv > div  {
     display: flex;
@@ -196,6 +193,7 @@
     padding: 10px 5%;
     gap: 100px;
     align-items: center;
+    flex-wrap: wrap;
 }
 .courierDiv > div  > div > h2 {
     width:410px;
@@ -229,6 +227,7 @@
 
 .sessionImages {
     height: 340px;
+
 }
 .courierDivList {
     display: flex;
@@ -308,7 +307,7 @@ ANALYTICS SESSION
 }.AnalyticsDiv > div {
     display: flex;
     flex-direction: row;
-    padding: 10px 5%;
+    padding: 2% 5%;
     gap: 100px;
     align-items: center;
 }
@@ -318,4 +317,83 @@ ANALYTICS SESSION
     padding: 10px;
     justify-content: center;
     flex-wrap: wrap;
+    background: rgba(217, 217, 217, 0.5);
+}
+.whySection > div {
+    padding: 3% 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+.whySection > div > div:nth-child(1) > h1 {
+    text-align: center;
+    color: var(--main--color);
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 3%;
+}
+.whySection > div > div:nth-child(1) > p {
+    text-align: center;
+    font-weight:300;
+    font-size: 14px;
+    width: 450px;
+}
+.whySection > div > div:nth-child(2)  {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding: 0px 3%;
+}
+.whySection > div > div:nth-child(2) > div {
+
+}
+.whySection > div > div:nth-child(2) > div > h3 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.whySection > div > div:nth-child(2) > div > p {
+    font-size: 13px;
+}
+.whySection > div > div:nth-child(2) > div  > div {
+    display: flex;
+    justify-content: center;
+}
+.whyShipam_Images {
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.lastSection {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.lastSection > div {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+.lastSection > div > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    justify-content: center;
+    
+}
+.lastSection > div > div:nth-child(1) > div:nth-child(2) > h2 {
+    width: 380px;
+    margin-bottom: 20px;
+}
+.headerDIV2 > h2 {
+    color: var(--main--color);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom:10px;
 }
