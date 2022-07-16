@@ -31,37 +31,37 @@ const Home = () =>{
                 <section className={ ` ${style.bannerDiv} ${width < 886 ? `${style.bannerDiv_respon}` : "" }`} >
                     <div className={style.bannerCon}>
                         <div>
-                           <h1 className={`${width < 500 ? `${style.bannerHeader_tag}` : "" }`}>Find and Compare Discounted shipping rates</h1> 
+                           <h1 className={`${width < 500 ? `${style.bannerHeader_tag}` : "" }`}>Find and Compare discounted shipping rates</h1> 
                            <p className={`${width < 500 ? `${style.bannerParagraph_tag}` : "" }`}> Use Shipam to compare prices from multiple delivery providers without sign up. 
                              Save up to 40% on your shipping cost with Shipbubble</p>
                         </div>
                         <div className={ `${width < 886 ? `${style.responDiv_height}` : ""}`}>
-                              <div  className={`${width < 886 ? `${style.responDiv} ` : "" } `}>
+                              <div  className={style.responDiv}>
                                     <div>
-                                            <p>Local</p>
-                                            <div>
-                                                <div>
-                                                    <img  src={location} alt="location" className={`${width < 886 ?`${style.locationIcon_respon1}`  : "" }`}/>
-                                                    <input type="text" placeholder="Enter Pickup Address"/>
-                                                </div>
-                                                <div>
-                                                    <img  src={location} alt="location" className={`${width < 886 ?`${style.locationIcon_respon2}`  : "" }`}/>
-                                                    <input type="text"  placeholder="Enter Delivery Address" />
-                                                </div>
-                                            </div>
+                                            <div ><p className={style.local}>Local</p></div>   <div><p>International</p></div>
                                     </div>
                                     <div>
-                                            <p>International</p>
+                                        <div>
                                             <div>
-                                                <input type="text" placeholder="Parcel Weight(kg)"/>
-                                                <select>
-                                                    <option value="0" className={style.select_item}>Select Category</option>
-                                                    <option value="1">Category</option>
-                                                </select>
+                                                <img  src={location} alt="location" className={`${width < 886 ?`${style.locationIcon_respon1}`  : "" }`}/>
+                                                <input type="text" placeholder="Enter Pickup Address" className={style.bannerInput}/>
                                             </div>
+                                            <div>
+                                                <img  src={location} alt="location" className={`${width < 886 ?`${style.locationIcon_respon1}`  : "" }`}/>
+                                                <input type="text"  placeholder="Enter Delivery Address"  className={style.bannerInput} />
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <input type="text" placeholder="Parcel Weight(kg)"/>
+                                            <select>
+                                                <option value="0" className={style.select_item}>Select Category</option>
+                                                <option value="1">Category</option>
+                                            </select>
+                                        </div>
                                     </div>
                               </div>
-                               <div className={`${style.priceBtnDiv} ${width < 886 ? `${style.priceBtnDiv_respon}`: ""}`}>
+                               <div className={style.priceBtnDiv}>
                                  <Button text="Check Prices"  className={style.priceBtn}/>
                                </div> 
                         </div>
@@ -69,10 +69,10 @@ const Home = () =>{
                 </section>
                 <section className={style.courierDiv}>
                      <div>
-                          <div>
+                          
                              <h2>Features you deserve for a 
                             hassle free delivery experience</h2>
-                          </div>
+                          
                            <div>
                                <div>
                                     <img src={courier} alt="shipping Options" className={style.sessionImages} />
@@ -80,8 +80,7 @@ const Home = () =>{
                                <div>
                                    <div>
                                       <h2>Multi-Courier Network</h2>
-                                      <p>Get access to discounted rates from 
-                                        reliable shipping providers through our multi-courier network.</p>
+                           <p>  reliable shipping providers through our multi-courier network.</p>
                                    </div>
                                    <div className={style.courierDivList}>
                                         <h3>Here's what you get: </h3>
@@ -224,7 +223,40 @@ const Home = () =>{
                             <p>
                                 Here we’ll share informative guides, inspirational case studies and latest from the Shipbubble office.
                             </p>
-                            
+                            <div className={style.FAQsection}>
+                                <div >
+                                    <Button  text="What does shipam do?" className={style.Question}/>
+                                    <div className={style.Answer}>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
+                                        fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
+                                        mollitia quasi in aperiam nam perferendis.</p>
+                                    </div>
+                                </div>
+                                <div >
+                                    <Button  text="What does shipam do?" className={style.Question}/>
+                                    <div className={style.Answer}>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
+                                        fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
+                                        mollitia quasi in aperiam nam perferendis.</p>
+                                    </div>
+                                </div>
+                                <div >
+                                    <Button  text="What does shipam do?" className={style.Question}/>
+                                    <div className={style.Answer}>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
+                                        fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
+                                        mollitia quasi in aperiam nam perferendis.</p>
+                                    </div>
+                                </div>
+                                <div >
+                                    <Button  text="What does shipam do?" className={style.Question}/>
+                                    <div className={style.Answer}>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
+                                        fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
+                                        mollitia quasi in aperiam nam perferendis.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

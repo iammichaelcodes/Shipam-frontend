@@ -1,3 +1,3 @@
 import Home from './Home'
-
-export {Home}
+import Partners from './Partners'
+export {Home,Partners}

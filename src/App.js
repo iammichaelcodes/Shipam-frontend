@@ -1,7 +1,7 @@
 
 import {Fragment} from 'react';
 import './App.css';
-import {Home} from './views/index';
+import {Home,Partners} from './views/index';
 import { Footer, Header } from './components/index';
 import { BrowserRouter  as Router,Routes, Route } from 'react-router-dom';
 
@@ -14,6 +14,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path="/" element={<Home />}/>
+          <Route path="/partner" element={<Partners />}/>
         </Routes>
         <Footer />
       </Router>
