@@ -1,0 +1,549 @@
+
+.firstSectionCon, .secondSecContent,.thirdSecContent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 30px 0 0;
+    align-items: center;
+}
+.firstSectionCon > div {
+  display: flex;
+  justify-content: space-between;
+  width: var(--developers--width);
+  align-items: center;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.firstSectionCon > div >  div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+}
+.firstSectionCon > div >  div > h1 {
+    color: var(--main--color);
+    width: 400px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.firstSectionCon > div >  div  > p {
+    font-weight: 400;
+    font-size: 15px;
+    max-width: 450px;
+    line-height: 1.6;
+    color: #000000;
+}
+.firstSectionCon >div >  img {
+    width: 500px;
+}
+.get_startedbtn {
+    border: none;
+    padding: 13px 10px;
+    background-color:var(--main--color);
+    color:#fff;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+
+}
+
+.secondSecContent> div {
+  display: flex;
+  justify-content: space-between;
+  width: var(--developers--width);
+  align-items: center;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  
+}
+.secondSecContent > div >  div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+}
+.secondSecContent >div >  img {
+    width: 400px;
+}
+.secondSecContent > div >  div > h1 {
+    color: var(--main--color);
+    width: 450px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.secondSecContent > div >  div  > p {
+    font-weight: 400;
+    font-size: 15px;
+    max-width: 450px;
+    line-height: 1.6;
+    color: #000000;
+}
+.thirdSecContent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 30px 0 0;
+    align-items: center;
+}
+.thirdSecContent > div {
+  display: flex;
+  justify-content: space-between;
+  width: var(--developers--width);
+  align-items: center;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.thirdSecContent > div >  div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+}
+.thirdSecContent >div >  img {
+    width: 400px;
+}
+.imgdiv {
+    display: none;
+    width: 400px;
+}
+.thirdSecContent > div >  div > h1 {
+    color: var(--main--color);
+    width: 500px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.thirdSecContent > div >  div  > p {
+    font-weight: 400;
+    font-size: 15px;
+    max-width: 480px;
+    line-height: 1.6;
+    color: #000000;
+}
+.fourthSecContent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 30px 0 0;
+    align-items: center;
+}
+.fourthSecContent > div {
+    display: flex;
+    justify-content: center;
+    width: var(--developers--width);
+    align-items: center;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 100px;
+    flex-direction: column;
+}
+.fourthSecContent > div > div > img {
+    width:1000px;
+    margin-bottom: 30px;
+}
+.fourthSecContent > div > h1 {
+    color: var(--main--color);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.fourthSecContent > div > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+.fourthSecContent > div > div > div > p {
+    border: 2px solid var(--btn-color1);
+    background-color: #fff;
+    width: 150px;
+    padding: 4px 0px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--main--color);
+}
+.fourthSecContent > div > div > div > p:nth-child(2) {
+    width: 200px;
+}
+.fifthSecContent, .lastSecContent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 30px 0 0;
+    align-items: center;
+}
+.fifthSecContent > div {
+    display: flex;
+    justify-content: center;
+    width: var(--developers--width);
+    align-items: center;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 50px;
+    flex-direction: column;
+}
+.fifthSecContent > div > h1 {
+    color: var(--main--color);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.fifthSecContent > div > div {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+.fifthSecContent > div > div > div {
+    box-shadow: 1px 4px 38px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    padding: 8% 3%;
+    padding-bottom:5%;
+    display: flex;
+    gap: 20px;
+    width: max(90%,250px);
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.fifthSecContent > div > div > div > h3 {
+    color: var(--main--color);
+    font-weight: 600;
+}
+.fifthSecContent > div > div > div > p {
+    font-size: 14px;
+}
+.lastSecContent > div  {
+    display: flex;
+    justify-content: center;
+    width: var(--developers--width);
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 30px;
+}
+.lastSecContent > div > div {
+    border-radius: 30px;
+    padding: 5% 2%;
+    padding-bottom: 2%;
+    width: 90%;
+    background: linear-gradient(146.97deg, #003E88 16.44%, #009AED 80.3%);
+}
+.lastSecContent > div > div  > h1 {
+    color:#fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.lastSecContent > div > div  > p {
+    display: none;
+}
+.exploreBtn {
+    border: none;
+    padding: 13px 10px;
+    background-color:#fff;
+    color:var(--btn-color1);
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/***** DEVELOPERS PAGE RESPONSIVE WEB DESIGN *********/
+@media screen and (max-width:990px) {
+     .firstSectionCon >  div {
+           flex-direction: column;
+           width: fit-content;
+           gap: 50px;
+     }
+     .secondSecContent >  div {
+        flex-direction: column;
+        width: fit-content;
+        gap: 50px;
+    }
+    .secondSecContent > div >  div > h1 {
+        text-align: center;
+    }
+    .secondSecContent > div >  div > p {
+        text-align: center;
+        line-height: normal;
+    }
+    .thirdSecContent >  div {
+        flex-direction: column-reverse;
+        width: fit-content;
+        gap: 50px;
+   }
+   .thirdSecContent > div >  div > h1 {
+    text-align: center;
+    }
+    .thirdSecContent > div >  div > p {
+        text-align: center;
+        line-height: normal;
+        margin-bottom: 30px;
+    }
+    .fourthSecContent > div > div > img {
+        width:90%;
+    }
+    .fifthSecContent >  div {
+        flex-direction: column;
+        width: fit-content;
+  }
+  .fifthSecContent > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+.fifthSecContent > div > div > div {
+    padding: 8% 5%;
+    gap: 10px;
+    padding-bottom: 5%;
+}
+}
+
+@media screen and (max-width:600px) {
+    .firstSectionCon {
+        align-items: center;
+        align-self: center;
+        background-color: #D9D9D9;
+        
+    }
+    .fourthSecContent {
+        align-items: center;
+        align-self: center;
+        background-color: #D9D9D9;
+        
+    }
+    .firstSectionCon >  div {
+          flex-direction: column;
+          width: fit-content;
+          gap: 50px;
+          padding-left: 3%;
+          padding-right: 3%;
+    }
+    .firstSectionCon >div >  img {
+        display: none;
+    }
+    .thirdSecContent >div >  img {
+        display: none;
+    }
+    .imgdiv{
+        display:block !important;
+        width:90%
+    }
+    .fourthSecContent > div {
+      gap: 70px;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+    }
+    .fourthSecContent > div > div  {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .fourthSecContent > div > div  > div {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+    .fourthSecContent > div > h1 {
+        font-size: 28px;
+    }
+    .fourthSecContent > div > div > img {
+        border-radius: 10px;
+        align-items: center;
+        align-self: center;
+    }
+    .fourthSecContent > div > div > div > p {
+        width: 130px;
+        font-size: 10px;
+        border-radius: 15px;
+        text-transform: lowercase;
+    }
+    .fourthSecContent > div > div > div > p:nth-child(2) {
+        width: 130px !important;
+    }
+    .fifthSecContent > div > div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .lastSecContent > div > div  > h1 {
+       text-align: center;
+       font-size: 20px;
+       margin-top: 30px;
+    }
+    .lastSecContent > div > div {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 5%;
+      width: max(90%,250px);
+    }
+    .lastSecContent > div > div  > p {
+        display: block;
+        margin-bottom: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .exploreBtn {
+        display: none;
+    }
+    .thirdSecContent > div >  div {
+        max-width: fit-content;
+        width: 90%;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .thirdSecContent> div >  div > h1 {
+        color: var(--main--color);
+        font-size: 20px !important;
+        width: 400px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+@media screen and (max-width:500px){
+   
+
+    .firstSectionCon >  div {
+        flex-direction: column;
+        width: fit-content;
+        gap: 50px;
+    }
+    .firstSectionCon > div >  div {
+        max-width: fit-content;
+        width: 90%;
+    }
+    .firstSectionCon > div >  div > h1 {
+        color: var(--main--color);
+        font-size: 20px;
+        font-weight: bold;
+        width:320px;
+    }
+    .firstSectionCon > div >  div > p {
+        width:90%;
+        font-size: 14px;
+    }
+    .secondSecContent > div >  div {
+        max-width: fit-content;
+        width: 90%;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .secondSecContent > div >  div > p {
+        width:90%;
+        font-size: 12px;
+        width: 300px;
+    }
+    .thirdSecContent > div >  div > p {
+        width:90%;
+        font-size: 12px;
+        text-align: center;
+        width: 320px;
+    }
+    .secondSecContent > div >  div > h1 {
+        color: var(--main--color);
+        font-size: 20px;
+        width: 350px;
+        text-align: center;
+    }
+    .secondSecContent >div >  img {
+        width: max(90%,300px);
+    }
+    .thirdSecContent >div >  img {
+        width: min(90%,350px);
+    }
+    .imgdiv{
+        display:block !important;
+        width: max(90%,250px);
+    }
+    .thirdSecContent > div >  div {
+        max-width: fit-content;
+        width: 90%;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .thirdSecContent> div >  div > h1 {
+        color: var(--main--color);
+        font-size: 20px !important;
+        width: 400px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .thirdSecContent> div  {
+        gap: 10px;
+    }
+    .fifthSecContent > div > div {
+      width: fit-content;
+      flex-direction: column;
+    }
+    .fifthSecContent > div > div > div {
+        padding: 15% 5%;
+        gap: 10px;
+        padding-bottom: 8%;
+    }
+    .fifthSecContent > div > div > div > img {
+        width: 30px !important;
+    }
+    .fifthSecContent > div > div > div > p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
+    
+
+@media screen and (max-width:400px) {
+    .firstSectionCon > div >  div {
+        max-width: fit-content;
+        width: 90%;
+    }
+    .firstSectionCon > div >  div > p {
+        width:90%;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+    .secondSecContent > div {
+        padding-right: 0px !important;
+    }
+    .thirdSecContent > div {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .secondSecContent > div >  div {
+        max-width: fit-content;
+        width: 90%;
+    }
+    .thirdSecContent > div >  div {
+        max-width: fit-content;
+        width: 90%;
+    }
+    .imgdiv{
+        display:block !important;
+        width: max(90%,250px);
+    }
+    .lastSecContent > div > div  {
+        padding-bottom: 10%;
+        gap: 50px;
+    }
+    .thirdSecContent> div >  div > h1 {
+        color: var(--main--color);
+        font-size: 18px !important;
+        width: 360px;
+        font-weight: bold;
+        text-align: center;
+    }
+  
+}

@@ -8,7 +8,8 @@ import {Button} from "../components/index.js"
 const Header = () => {
     //variable declaration
     const home = "/";
-    const track = "/track";
+    const dev = "/dev";
+    const track = "/track"
 
     //usestate hooks
     const [navMenu, setNavMenu] = useState(false);
@@ -43,7 +44,7 @@ const Header = () => {
                           </Link>
                        </li>
                        <li>
-                          <Link to={track}>
+                          <Link to={dev}>
                              Developers
                           </Link>
                        </li>

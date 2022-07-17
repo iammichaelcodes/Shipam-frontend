@@ -1,8 +1,14 @@
+import { Fragment } from "react";
+
 const Partners = () => {
     return (  
-        <div>
-            
-        </div>
+         <Fragment>
+              <div>
+                 <section>
+                    
+                 </section>
+              </div>
+         </Fragment>
     );
 }
  
