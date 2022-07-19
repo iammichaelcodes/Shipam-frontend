@@ -101,14 +101,22 @@
     flex-direction: column;
     align-items: center;
 }
-.faqSection > div > h1 {
+.faqSection > div > div:nth-child(1) {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.faqSection > div > div>h1 {
     color: var(--main--color);
     font-weight: bold;
     font-size: 30px;
-    margin-bottom: 20px;
+    text-align: center;
 }
 .faqSection > div > p {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
 }
 .faqSection > div  > div {
@@ -145,6 +153,7 @@
     position:absolute;
     font-size: 18px;
     top:25%;
+    cursor: pointer;
 }
 .Answer {
     width: 100%;
@@ -189,6 +198,13 @@
     .faqSection > div  > div {
       
         width: 70%;
+    }
+    .faqSection > div > div:nth-child(1) {
+        flex-direction: column;
+        gap: 3px;
+    }
+    .faqSection > div > p {
+        width: 90%;
     }
 }
 
@@ -252,13 +268,12 @@
 
 @media screen and (max-width:600px) {
     .faqSection > div  > div {
-      
+        margin-bottom: 20px;
         width: 80%;
     }
-    .faqSection > div > h1  {
+    .faqSection > div > div > h1  {
         text-align: center;
         font-size: 18px;
-        width: 295px;
     }
     .faqSection > div > p {
         width: 90%;

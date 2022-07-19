@@ -6,7 +6,7 @@ import { Button } from "../components";
 import {TiArrowSortedDown as ArrowDown} from 'react-icons/ti';
 
 const Track = () => {
-    const iconStyle = {color:"var(--main--color)",height:"100px"}
+       
     return ( 
          <Fragment>
             <div>
@@ -33,7 +33,8 @@ const Track = () => {
                 </section>
                 <section className={style.faqSection}>
                     <div>
-                        <h1>Frequently Asked Questions(FAQs)</h1>
+
+                        <div><h1>Frequently Asked Questions</h1> <h1>(FAQs)</h1></div> 
                         <p>Here we’ll share informative guides, inspirational case studies and latest from the Shipbubble office.</p>
                         <div>
                             <div >
@@ -49,7 +50,7 @@ const Track = () => {
                                 </div>
                             </div>
                             <div >
-                               <Button  text="What does shipam do?" className={style.Question}>
+                               <Button  text="Do you offer inter-state deliveries?" className={style.Question}>
                                   <ArrowDown />
                                 </Button>
                                 <div className={style.Answer}>
@@ -59,7 +60,7 @@ const Track = () => {
                                 </div>
                             </div>
                             <div >
-                               <Button  text="What does shipam do?" className={style.Question}>
+                               <Button  text="Can I track a shipment?" className={style.Question}>
                                   <ArrowDown />
                                 </Button>
                                 <div className={style.Answer}>
@@ -69,7 +70,7 @@ const Track = () => {
                                 </div>
                             </div>
                             <div >
-                               <Button  text="What does shipam do?" className={style.Question}>
+                               <Button  text="Do I need to create an account?" className={style.Question}>
                                   <ArrowDown />
                                 </Button>
                                 <div className={style.Answer}>
