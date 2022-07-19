@@ -1,0 +1,236 @@
+.trackBanner {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 30px 0 0;
+    align-items: center;
+    background-image:  url("../../assets/images/TrackBanner.png");
+    background-color: var(--main--color);
+    mix-blend-mode: color-burn;
+    height:auto;
+}
+.trackBanner > div {
+    width: var(--developers--width);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+}
+.trackBanner > div > div:nth-child(2) {
+    margin-bottom: 90px;
+}
+.trackBanner > div > div:nth-child(2) > img {
+    width: 350px;
+}
+.trackBanner > div > div:nth-child(1) > h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    width: 200px;
+}
+.trackBanner > div > div:nth-child(1) {
+    width:70%
+}
+.trackBanner > div > div:nth-child(1) >div {
+    width: max(90%,350px);
+}
+.trackBanner > div > div:nth-child(1) >div >  input {
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    color: black;
+    background-color: #fff;
+    font-size: 12px;
+}
+.trackBanner > div > div:nth-child(1) >div >  input:focus {
+    outline: none;
+}
+.trackBanner > div > div:nth-child(2) {
+    position: relative;
+    margin-right: 100px;
+}
+.trackBanner > div > div:nth-child(2) > div {
+    border: 2px solid #fff;
+    background-color: var(--main--color);
+    border-radius: 10px;
+ 
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    position: absolute;
+    
+}
+.ellipseDiv {
+    top: 90%;
+    padding: 15px 10px !important;
+    right: 20%;
+    font-size: 14px !important;
+    
+}
+.ellipseDiv1 {
+    top: -12px;
+    right: -20%;
+    text-align: right;
+    padding: 5px;
+    padding-right: 10px;
+}
+.trackBanner > div > div:nth-child(2) > div > p:nth-child(2) {
+    text-align: right;
+    padding-right: 20px;
+}
+.trackBanner > div > div > div > img {
+    display: none;
+}
+.faqSection {
+    display: flex;
+    width: 100%;
+    padding: 30px 0 0;
+    justify-content: center;
+    align-items: center;
+}
+.faqSection > div {
+    display: flex;
+    justify-content: center;
+    width: var(--developers--width);
+    flex-direction: column;
+    align-items: center;
+}
+.faqSection > div > h1 {
+    color: var(--main--color);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.faqSection > div  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.faqSection > div  > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+.Question {
+    background-color: #fff;
+    border: 1px solid var(--main--color);
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+}
+.Question::after {
+    content: url("../../assets/images/vectorArrow.png");
+    position: absolute;
+    left: 93%;
+    height: 100%;
+    width: 100%;
+}
+.Answer {
+    
+    background-color:var(--main--color);
+    border: 1px solid var(--main--color);
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    font-weight: 300;
+    color: #fff;
+    font-size: 12px;
+}
+.ArrowBtn {
+    height: 20px;
+    position: absolute;
+    top: 850px;
+    left: 10%;
+}
+.Answer > p {
+     line-height: 1.6;
+}
+/******** TRACK RESPONSIVE WEB DESIGN **********/
+
+
+@media screen and (max-width:930px) {
+    .trackBanner > div {
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: center;
+        gap: 60px;
+    }
+    .trackBanner > div > div:nth-child(1) >div {
+        margin-bottom: 50px;
+    }
+    .trackBanner > div > div:nth-child(2) > img {
+        width: 400px;
+    }
+    .ellipseDiv1 {
+        right: -17%;
+        top:-8px;
+    }
+    .trackBanner > div > div:nth-child(2) {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .trackBanner {
+        mix-blend-mode: lighten;
+    }
+    .trackBanner > div {
+        padding: 0 0px;
+        gap: 0px;
+    }
+    .trackBanner > div > div:nth-child(2) > img {
+        display: none;
+    }
+    .trackBanner > div > div:nth-child(2) > div {
+        display: none;
+    }
+    .trackBanner > div > div:nth-child(1) >div {
+        display: flex;
+    }
+    .trackBanner > div > div > div > img {
+        display: block;
+        border: 1px solid #fff;
+        background-color:#fff;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        height: 42px;
+        cursor: pointer;
+    }
+    .trackBanner > div > div:nth-child(1) {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .trackBanner > div > div:nth-child(1) >div >  input {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        background-color: var(--main--color);
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 12px 5px;
+        font-weight: 300;
+    }
+    .trackBanner > div > div:nth-child(1) >div >  input:focus {
+        padding: 12px 5px;
+        height: 42px;
+    }
+    ::placeholder {
+        color: #fff;
+    }
+    .trackBanner > div > div:nth-child(1) > div {
+        width:100%;
+     }
+}

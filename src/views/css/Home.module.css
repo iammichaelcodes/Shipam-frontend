@@ -494,6 +494,8 @@ ANALYTICS SESSION
 .AnalyticsDiv > div  > div:nth-child(2) > div:nth-child(2){
     max-width: 620px;
 }
+
+/***** WHYSECTION ********/
 .whySection {
     display: flex;
     width: 100%;
