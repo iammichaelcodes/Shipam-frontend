@@ -4,8 +4,10 @@ import style from "../views/css/Track.module.css";
 import Search from "../assets/images/akar-icons_search.png";
 import Arrow from "../assets/images/vectorArrow.png";
 import { Button } from "../components";
+import {TiArrowSortedDown as ArrowDown} from 'react-icons/ti';
 
 const Track = () => {
+    const iconStyle = {color:"var(--main--color)"}
     return ( 
          <Fragment>
             <div>
@@ -37,7 +39,32 @@ const Track = () => {
                         <div>
                             <div >
                                 <Button  text="What does shipam do?" className={style.Question}/>
-                                <img src={Arrow} alt="arrow"  className={style.ArrowBtn}/>
+                                <ArrowDown  style={iconStyle}/>
+                                <div className={style.Answer}>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
+                                    fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
+                                    mollitia quasi in aperiam nam perferendis.</p>
+
+                                </div>
+                            </div>
+                            <div >
+                                <Button  text="Do you offer inter-state deliveries?" className={style.Question}/>
+                                <div className={style.Answer}>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
+                                    fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
+                                    mollitia quasi in aperiam nam perferendis.</p>
+                                </div>
+                            </div>
+                            <div >
+                                <Button  text="Can I track a shipment?" className={style.Question}/>
+                                <div className={style.Answer}>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
+                                    fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
+                                    mollitia quasi in aperiam nam perferendis.</p>
+                                </div>
+                            </div>
+                            <div >
+                                <Button  text="Do I need to create an account?" className={style.Question}/>
                                 <div className={style.Answer}>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
                                     fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
