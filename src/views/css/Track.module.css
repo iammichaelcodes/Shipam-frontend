@@ -139,9 +139,12 @@
     font-weight: 700;
     font-size: 12px;
 }
-
 .Question > svg {
-    color: var(--main--color);
+    color: var(--main--color) !important;
+    right:10px;
+    position:absolute;
+    font-size: 18px;
+    top:25%;
 }
 .Answer {
     width: 100%;
@@ -251,14 +254,6 @@
     .faqSection > div  > div {
       
         width: 80%;
-    }
-    .Question::after {
-        content: url("../../assets/images/arrow-down.png");
-        position: absolute;
-        left: 93%;
-        top: 10%;
-        height: 10%;
-        width: 100%;
     }
     .faqSection > div > h1  {
         text-align: center;

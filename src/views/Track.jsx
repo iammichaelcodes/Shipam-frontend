@@ -2,12 +2,11 @@ import React, {Fragment} from "react";
 import Ellipse from "../assets/images/Ellipse.png";
 import style from "../views/css/Track.module.css";
 import Search from "../assets/images/akar-icons_search.png";
-import Arrow from "../assets/images/vectorArrow.png";
 import { Button } from "../components";
 import {TiArrowSortedDown as ArrowDown} from 'react-icons/ti';
 
 const Track = () => {
-    const iconStyle = {color:"var(--main--color)"}
+    const iconStyle = {color:"var(--main--color)",height:"100px"}
     return ( 
          <Fragment>
             <div>
@@ -38,8 +37,10 @@ const Track = () => {
                         <p>Here we’ll share informative guides, inspirational case studies and latest from the Shipbubble office.</p>
                         <div>
                             <div >
-                                <Button  text="What does shipam do?" className={style.Question}/>
-                                <ArrowDown  style={iconStyle}/>
+                                <Button  text="What does shipam do?" className={style.Question}>
+                                  <ArrowDown />
+                                </Button>
+                                
                                 <div className={style.Answer}>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
                                     fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
@@ -48,7 +49,9 @@ const Track = () => {
                                 </div>
                             </div>
                             <div >
-                                <Button  text="Do you offer inter-state deliveries?" className={style.Question}/>
+                               <Button  text="What does shipam do?" className={style.Question}>
+                                  <ArrowDown />
+                                </Button>
                                 <div className={style.Answer}>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
                                     fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
@@ -56,7 +59,9 @@ const Track = () => {
                                 </div>
                             </div>
                             <div >
-                                <Button  text="Can I track a shipment?" className={style.Question}/>
+                               <Button  text="What does shipam do?" className={style.Question}>
+                                  <ArrowDown />
+                                </Button>
                                 <div className={style.Answer}>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
                                     fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
@@ -64,7 +69,9 @@ const Track = () => {
                                 </div>
                             </div>
                             <div >
-                                <Button  text="Do I need to create an account?" className={style.Question}/>
+                               <Button  text="What does shipam do?" className={style.Question}>
+                                  <ArrowDown />
+                                </Button>
                                 <div className={style.Answer}>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
                                     fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
