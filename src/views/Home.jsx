@@ -1,25 +1,21 @@
 import { Fragment } from "react";
 import style from "../views/css/Home.module.css"; 
 import location from "../assets/images/locationTrack.png";
-import courier from "../assets/images/CourierNetwork.png";
 import session3Image from "../assets/images/ShippingPartner.png";
 import session4Image from "../assets/images/Analytics.png";
 import cashflow from "../assets/images/cashflowIcon.png";
 import control from "../assets/images/control.png";
 import barchat from "../assets/images/barChatIcon.png";
-import Ease from "../assets/images/EaseOfAcess.png";
 import Deliver from "../assets/images/ion_bicycle.png";
 import Pay from "../assets/images/Pay.png";
 import PartnerLogos from "../assets/images/partnerLogos.png";
-import Growth from "../assets/images/carbon_growth.png";
-import DeliveryParcel from "../assets/images/carbon_delivery-parcel.png";
-import HealthIcons from "../assets/images/healthicons_call-centre.png";
 import Search from "../assets/images/Search.png";
-import Flexibility from "../assets/images/flexibility.png";
-import Efficiency from "../assets/images/Efficiency.png";
 import { Button } from "../components";
 import { Useviewport } from "../useviewPorts";
-
+import Courier from "../components/Courier";
+import Whyshipam from "../components/whyShipam";
+import Courierpartners from "../components/CourierPartners";
+import Faqsection from "../components/faqSection";
 const Home = () =>{
 
     const {width} = Useviewport();
@@ -67,199 +63,10 @@ const Home = () =>{
                         </div>
                     </div>
                 </section>
-                <section className={style.courierDiv}>
-                     <div>
-                          
-                             <h2>Features you deserve for a 
-                            hassle free delivery experience</h2>
-                          
-                           <div>
-                               <div>
-                                    <img src={courier} alt="shipping Options" className={style.sessionImages} />
-                               </div>
-                               <div>
-                                   <div>
-                                      <h2>Multi-Courier Network</h2>
-                           <p>  reliable shipping providers through our multi-courier network.</p>
-                                   </div>
-                                   <div className={style.courierDivList}>
-                                        <h3>Here's what you get: </h3>
-                                        <div>
-                                           <div className={style.icon}>
-                                               <img src={Ease} alt="ease of access icon" className={style.courierDivListIcon} />
-                                                <h3>Ease of Access</h3>
-                                                 <p>Multiple delivery options all in one place</p>   
-                                           </div>
-                                           <div className={style.icon}>
-                                               <img src={Flexibility} alt="flexibility icon" className={style.courierDivListIcon} />
-                                                <h3>Flexibility</h3>
-                                                 <p>Tailor your delivery experience to what you prioritize, whether cost or delivery time.</p>   
-                                           </div>
-                                           <div className={style.icon}>
-                                               <img src={Efficiency} alt="efficiency icon" className={style.courierDivListIcon} />
-                                                <h3>Efficiency</h3>
-                                                <p>Manage how your products are delivered in little to no time.</p>   
-                                           </div>
-                                        </div>
-                                   </div>
-                               </div>
-                           </div>
-                     </div>
-                </section>
-                <section className={style.partnerDiv}>
-                   <div>
-                        <div>
-                            <div className={style.headerDIV}>
-                                <h2>Dedicated Shipping Partner</h2>
-                                <p>
-                                  At little to no cost, have full control of your orders with us. Schedule orders, 
-                                  plan ahead with deliveries, and offer options based on your customers' needs.
-                                </p>
-                            </div>
-                            <div className={style.courierDivList}>
-                                <h3>Here's what you get: </h3>
-                                <div>
-                                    <div className={style.icon}>
-                                        <img src={Search} alt="ease of access icon" className={style.courierDivListIcon} />
-                                        <h3>Search</h3>
-                                            <p>Multiple delivery options all in one place</p>   
-                                    </div>
-                                    <div className={style.icon}>
-                                        <img src={Pay} alt="flexibility icon" className={style.courierDivListIcon} />
-                                        <h3>Pay</h3>
-                                            <p>Tailor your delivery experience to what you prioritize, whether cost or delivery time.</p>   
-                                    </div>
-                                    <div className={style.icon}>
-                                        <img src={Deliver} alt="efficiency icon" className={style.courierDivListIcon} />
-                                        <h3>Deliver</h3>
-                                        <p>Manage how your products are delivered in little to no time.</p>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div>
-                            <img src={session3Image} alt="shipping Options" className={style.sessionImages} />
-                        </div>    
-                   </div>
-                </section>
-                <section className={style.AnalyticsDiv}>
-                      <div>
-                            <div>
-                                <img src={session4Image} alt="shipping Options" className={style.sessionImages} />
-                            </div>
-                            <div>
-                                <div className={style.headerDIV}>
-                                    <h2>Analytics</h2>
-                                    <p>Understand your business better, and see what the data behind your deliveries say..</p>
-                                </div>
-                                <div className={style.courierDivList}>
-                                    <h3>Here's what you get: </h3>
-                                    <div>
-                                        <div className={style.icon}>
-                                            <img src={cashflow} alt="ease of access icon" className={style.courierDivListIcon} />
-                                            <h3>Ease of Access</h3>
-                                                <p>Multiple delivery options all in one place</p>   
-                                        </div>
-                                        <div className={style.icon}>
-                                            <img src={barchat} alt="flexibility icon" className={style.courierDivListIcon} />
-                                            <h3>Flexibility</h3>
-                                                <p>Tailor your delivery experience to what you prioritize, whether cost or delivery time.</p>   
-                                        </div>
-                                        <div className={style.icon}>
-                                            <img src={control} alt="efficiency icon" className={style.courierDivListIcon} />
-                                            <h3>Efficiency</h3>
-                                            <p>Manage how your products are delivered in little to no time.</p>   
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                      </div>
-                </section>
-                <section className={style.whySection} >
-                    <div>
-                         <div>
-                            <h1>Why Shipam?</h1>
-                             <p>
-                                Save time, money when shipping products to your customers. 
-                                Find and compare discounted shipping rates from delivery providers in Africa.
-                             </p>
-                         </div>
-                         <div>
-                             <div>
-                                  <div><img  src={Growth} alt="carbon-growth" className={style.whyShipam_Images}/></div>
-                                <h3>Expand your reach & increase sales</h3>
-                                <p>Connect to multiple delivery providers and deliver your orders nationwide and international</p>
-                             </div>
-                             <div>
-                                <div><img  src={DeliveryParcel} alt="carbon-growth" className={style.whyShipam_Images}/></div>
-                                <h3>Expand your reach & increase sales</h3>
-                                <p>Connect to multiple delivery providers and deliver your orders nationwide and international</p>
-                             </div>
-                             <div>
-                                <div><img  src={HealthIcons} alt="carbon-growth" className={style.whyShipam_Images}/></div>
-                                <h3>Expand your reach & increase sales</h3>
-                                <p>Connect to multiple delivery providers and deliver your orders nationwide and international</p>
-                             </div>
-                         </div>
-                    </div>
-                </section>
-                <section className={style.lastSection}>
-                    <div>
-                        <div>
-                            <div>
-                                <img src={PartnerLogos} alt="companies icons" className={style.sessionImages} />
-                            </div>
-                            <div className={style.headerDIV}>
-                                <h2>We have partnered with some of the best courier</h2>
-                                <p> We have partnered with the most reliable couriers - Through us, 
-                                  you can deliver your products through the most trusted couriers in Africa, 
-                                  at no extra cost. 
-                                </p>
-                                <p>View all supported couriers</p>
-                            </div>
-                        </div>
-                        <div className={style.headerDIV2}>
-                            <h2>Frequently Asked Questions (FAQs)</h2>
-                            <p>
-                                Here we’ll share informative guides, inspirational case studies and latest from the Shipbubble office.
-                            </p>
-                            <div className={style.FAQsection}>
-                                <div >
-                                    <Button  text="What does shipam do?" className={style.Question}/>
-                                    <div className={style.Answer}>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
-                                        fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
-                                        mollitia quasi in aperiam nam perferendis.</p>
-                                    </div>
-                                </div>
-                                <div >
-                                    <Button  text="What does shipam do?" className={style.Question}/>
-                                    <div className={style.Answer}>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
-                                        fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
-                                        mollitia quasi in aperiam nam perferendis.</p>
-                                    </div>
-                                </div>
-                                <div >
-                                    <Button  text="What does shipam do?" className={style.Question}/>
-                                    <div className={style.Answer}>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
-                                        fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
-                                        mollitia quasi in aperiam nam perferendis.</p>
-                                    </div>
-                                </div>
-                                <div >
-                                    <Button  text="What does shipam do?" className={style.Question}/>
-                                    <div className={style.Answer}>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi 
-                                        fuga ducimus vel qui, atque reiciendis dolore accusantium. Vero aliquid autem vel ullam necessitatibus,
-                                        mollitia quasi in aperiam nam perferendis.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <Courier />
+                <Whyshipam />
+                <Courierpartners />
+                <Faqsection />
             </div>
             
         </Fragment>

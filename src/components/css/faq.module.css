@@ -1,0 +1,117 @@
+.faqSection {
+    display: flex;
+    width: 100%;
+    padding: 30px 0 0;
+    justify-content: center;
+    align-items: center;
+}
+.faqSection > div {
+    display: flex;
+    justify-content: center;
+    width: var(--developers--width);
+    flex-direction: column;
+    align-items: center;
+}
+.faqSection > div > div:nth-child(1) {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.faqSection > div > div>h1 {
+    color: var(--main--color);
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.faqSection > div > p {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.faqSection > div  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin-bottom: 100px;
+}
+.faqSection > div  > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+}
+.faqSection > div  > div > div > p {
+    font-weight: bold;
+}
+.Question {
+    background-color: #fff;
+    border: 1px solid var(--main--color);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    font-weight: 700;
+    font-size: 12px;
+}
+.Question > svg {
+    color: var(--main--color) !important;
+    right:10px;
+    position:absolute;
+    font-size: 18px;
+    top:25%;
+    cursor: pointer;
+}
+.Answer {
+    width: 100%;
+    background-color:var(--main--color);
+    border: 1px solid var(--main--color);
+    display: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    font-weight: 300;
+    color: #fff;
+    font-size: 12px;
+}
+
+.Answer > p {
+     line-height: 1.6;
+}
+@media screen and (max-width:930px) {
+    .faqSection > div > div:nth-child(1) {
+        flex-direction: column;
+        gap: 3px;
+    }
+    .faqSection > div > p {
+        width: 90%;
+    }
+}
+@media screen and (max-width:700px) {
+    .faqSection > div  > div {
+      
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .faqSection > div  > div {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    .faqSection > div > div > h1  {
+        text-align: center;
+        font-size: 18px;
+    }
+    .faqSection > div > p {
+        width: 90%;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+   
+}

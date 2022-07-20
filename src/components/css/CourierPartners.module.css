@@ -1,0 +1,101 @@
+.CourierPartners {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 0;
+}
+.CourierPartners  > div {
+    width: var(--developers--width);
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.CourierPartners  > div > img {
+    width: 400px;
+    margin-left: 60px;
+}
+.CourierPartners  > div > div {
+    margin-right: 100px;
+}
+.CourierPartners  > div > div > h1 {
+    width: 400px;
+    color: var(--main--color);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.CourierPartners  > div > div {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+.paragraph1{
+    margin-bottom: 30px;
+    font-size: 14px;
+    width: 400px;
+    line-height: 1.6;
+}
+@media screen and (max-width:990px) {
+    .CourierPartners > div {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        width: 90%;
+        max-width: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+    .CourierPartners > div >  img {
+        margin-left: 0px;
+    }
+    .CourierPartners  > div > div {
+        margin-right: 0px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .CourierPartners  > div > div > h1 {
+        color: var(--main--color);
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 90%;
+    }
+    .CourierPartners  > div > div > P {
+        text-align: center;
+        width: 90%;
+    }
+    .paragraph1 {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .CourierPartners  > div > div > h1 {
+        width: 90%;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:500px) {
+    .CourierPartners > div {
+        width: 90%;
+        max-width: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+    .CourierPartners > div >  img {
+        width: 90%;
+    }
+    .CourierPartners  > div > div {
+        width: 100%;
+        align-items: center;
+    }
+    .CourierPartners  > div > div > p {
+         font-size: 13px;
+         line-height: normal;
+    }
+    .CourierPartners  > div > div > h1 {
+        width: 90%;
+        font-size: 19px;
+    }
+}
