@@ -1,15 +1,6 @@
 import { Fragment } from "react";
 import style from "../views/css/Home.module.css"; 
 import location from "../assets/images/locationTrack.png";
-import session3Image from "../assets/images/ShippingPartner.png";
-import session4Image from "../assets/images/Analytics.png";
-import cashflow from "../assets/images/cashflowIcon.png";
-import control from "../assets/images/control.png";
-import barchat from "../assets/images/barChatIcon.png";
-import Deliver from "../assets/images/ion_bicycle.png";
-import Pay from "../assets/images/Pay.png";
-import PartnerLogos from "../assets/images/partnerLogos.png";
-import Search from "../assets/images/Search.png";
 import { Button } from "../components";
 import { Useviewport } from "../useviewPorts";
 import Courier from "../components/Courier";
