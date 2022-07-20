@@ -1,12 +1,12 @@
 
-import React, {fragment} from "react";
+import React, {Fragment} from "react";
 
 import style from "../components/css/CourierPartners.module.css";
 import ShippingPartner from "../assets/images/partnerLogos.png";
 
 const Courierpartners = () => {
     return ( 
-        <fragment>
+        <Fragment>
             <section className={style.CourierPartners}>
                 <div>
                     <img src={ShippingPartner}  alt="shipping partners"/>
@@ -21,7 +21,7 @@ const Courierpartners = () => {
                      </div>
                 </div>
             </section>
-        </fragment>
+        </Fragment>
        
      );
 }

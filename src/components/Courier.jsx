@@ -1,4 +1,4 @@
-import React, {fragment} from "react";
+import React, {Fragment} from "react";
 import style from "../components/css/Courier.module.css";
 import courier from "../assets/images/CourierNetwork.png";
 import ShippingPartner from "../assets/images/ShippingPartner.png";
@@ -16,7 +16,7 @@ import Cashflow from "../assets/images/cashflowIcon.png";
 
 const Courier = () => {
     return ( 
-        <fragment>
+        <Fragment>
             <section className={style.CourierNetwork}>
                     <div>
                         <h1>Features you deserve for a hassle free delivery experience</h1>
@@ -105,7 +105,7 @@ const Courier = () => {
                         </div>
                     </div>
                 </section>
-        </fragment>
+        </Fragment>
      );
 }
  

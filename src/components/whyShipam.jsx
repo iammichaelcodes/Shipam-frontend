@@ -1,4 +1,4 @@
-import React,{fragment} from "react";
+import React,{Fragment} from "react";
 import style from "../components/css/whyShipam.module.css";
 import Growth from "../assets/images/carbon_growth.png";
 import DeliveryParcel from "../assets/images/carbon_delivery-parcel.png";
@@ -6,7 +6,7 @@ import HealthIcons from "../assets/images/healthicons_call-centre.png";
 
 const Whyshipam = () => {
     return ( 
-        <fragment>
+        <Fragment>
             <section className={style.whyshipam}>
                <div>
                     <h1>Why Shipam?</h1>
@@ -38,7 +38,7 @@ const Whyshipam = () => {
                     </div>
                </div>
             </section>
-        </fragment>
+        </Fragment>
      );
 }
  
