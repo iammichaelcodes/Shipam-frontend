@@ -4,6 +4,7 @@ import PartnersLogo from "../assets/images/partnerLogos.png";
 import Carriers from "../assets/images/Carriers.png";
 import Partner1 from "../assets/images/fulfilmentPartner.png";
 import Partner2 from "../assets/images/TechnologyPartner.png";
+import FormImage from "../assets/images/Formimage.png";
 import { Button } from "../components";
 const Partners = () => {
     return (  
@@ -30,6 +31,41 @@ const Partners = () => {
                          <img src={Partner1} alt="Fulfilment Partners" className={style.imagePartner}/>
                          <h1>Featured Technology Partners</h1>
                          <img src={Partner2} alt="Technology Partners" className={style.imagePartner}/>
+                     </div>
+                 </section>
+                 <section className={style.thirdSectionCon}>
+                     <div>
+                         <div>
+                              <img src={FormImage}  alt="form image"/>
+                              <div>
+                                   <h2>Become a Partner</h2>
+                                   <p>We’d like to work with you</p>
+                                   <form className={style.form}>
+                                      <p>Business name</p>
+                                      <br />
+                                      <input type="text" required />
+                                      <br />
+                                      <p>Phone Number</p>
+                                      <br />
+                                      <input type="text" required  />
+                                      <br />
+                                      <p>Email</p>
+                                      <br />
+                                      <input type="text" required />
+                                      <br />
+                                      <p>Country</p>
+                                      <br />
+                                      <input type="text" required />
+                                      <br />
+                                      <p>Message</p><br />
+                                      <textarea required/>
+                                      <div className={style.btndiv}>
+                                         <Button text="Send Message" className={style.msgBtn}/>
+                                       </div>
+                                   </form>
+                                 
+                              </div>
+                         </div>
                      </div>
                  </section>
               </div>

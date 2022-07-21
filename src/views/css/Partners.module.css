@@ -77,6 +77,90 @@
   width: 300px;
   margin-bottom: 20px;
 }
+.thirdSectionCon {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 30px 0 0;
+    align-items: center;
+}
+.thirdSectionCon > div {
+    width: var(--developers--width);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.thirdSectionCon > div > div {
+    border-radius: 73px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    box-shadow: 1px 3px 38px 11px rgba(0, 0, 0, 0.25);
+    height: 700px;
+    
+}
+.thirdSectionCon > div > div > img {
+    width: 50%;
+    border: none;
+}
+.thirdSectionCon > div > div > div {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    margin-left: 10px;
+}
+.thirdSectionCon > div > div > div > h2 {
+  color: var(--main--color);
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.thirdSectionCon > div > div > div > p {
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+.form  {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.form > input,textarea {
+    border: 1px solid var(--btn-color1) !important;
+    width: 80% !important;
+    height: inherit;
+    color: #000000 !important;
+    border-radius: 3px !important;
+    padding: 7px 7px !important;
+    margin-bottom: 10px !important;
+    font-size: 13px !important;
+    max-width: 80% !important;
+    outline: none !important;
+    background-color: #fff !important;
+}
+
+.form > p {
+    margin-bottom: -10px !important;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.btndiv {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+}
+.msgBtn {
+    border: none;
+    padding: 13px 20px;
+    background-color: var(--btn-color1);
+    color: white;
+    font-size: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
 @media screen and (max-width:1029px) {
    .imagePartners {
     width: max(90%,350px);
@@ -93,6 +177,48 @@
        width: 90%;
     }
 
+}
+@media screen and (max-width:900px) {
+    .thirdSectionCon > div > div {
+        border-radius: 73px;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        box-shadow: 1px 3px 38px 11px rgba(0, 0, 0, 0.25);
+        
+    }
+
+}
+@media screen and (max-width:767px) {
+
+    .thirdSectionCon > div > div > img {
+        display: none;
+    }
+    .thirdSectionCon > div > div > div {
+        width: 100%;
+        margin-right: 30px;
+        justify-content: center;
+    }
+    .thirdSectionCon > div > div  {
+        border-radius: 10px;
+        justify-content: flex-start;
+        height: auto;
+        padding-top: 5%;
+        width: 90%;
+    }
+    
+    .form > input,textarea  {
+        width: 100% !important;
+        max-width: 100% !important;
+        border: 1px solid rgba(0, 62, 136, 0.09) !important;
+    }
+    .btndiv {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .msgBtn {
+        background-color: var(--main--color);
+    }
 }
 @media screen and (max-width:600px) {
     .firstSectionCon >div >  img {
