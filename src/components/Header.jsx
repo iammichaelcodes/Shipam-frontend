@@ -9,7 +9,8 @@ const Header = () => {
     //variable declaration
     const home = "/";
     const dev = "/dev";
-    const track = "/track"
+    const track = "/track";
+    const partner = "/partner"
 
     //usestate hooks
     const [navMenu, setNavMenu] = useState(false);
@@ -54,7 +55,7 @@ const Header = () => {
                           </Link>
                        </li>
                        <li>
-                          <Link to={track}>
+                          <Link to={partner}>
                                 Partners
                           </Link>
                        </li>
