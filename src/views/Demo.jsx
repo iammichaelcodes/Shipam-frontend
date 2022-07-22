@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-import style from "../views/css/Developer.module.css";
+import style from "../views/css/Demo.module.css";
 import ShippingImage from "../assets/images/shipping-image.png";
 import ShippingImage2 from "../assets/images/shipping-image2.png";
 import ShippingImage3 from "../assets/images/shipping-image3.png";

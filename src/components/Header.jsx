@@ -47,7 +47,7 @@ const Header = () => {
                        </li>
                        <li>
                           <Link to={dev}>
-                             Developers
+                             Demo
                           </Link>
                        </li>
                        <li>
@@ -58,11 +58,6 @@ const Header = () => {
                        <li>
                           <Link to={partner}>
                                 Partners
-                          </Link>
-                       </li>
-                       <li>
-                          <Link to={track}>
-                             Blog
                           </Link>
                        </li>
                        <li className={style.resBtn}>

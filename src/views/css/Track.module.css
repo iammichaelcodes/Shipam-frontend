@@ -21,6 +21,7 @@
 }
 .trackBanner > div > div:nth-child(2) > img {
     width: 350px;
+    margin-top: 80px;
 }
 .trackBanner > div > div:nth-child(1) > h3 {
     color: #fff;
@@ -71,6 +72,7 @@
     padding: 15px 10px !important;
     right: 20%;
     font-size: 14px !important;
+   
     
 }
 .ellipseDiv1 {
@@ -79,6 +81,7 @@
     text-align: right;
     padding: 5px;
     padding-right: 10px;
+    margin-top: 80px;
 }
 .trackBanner > div > div:nth-child(2) > div > p:nth-child(2) {
     text-align: right;
@@ -262,6 +265,9 @@
      .faqSection > div  > div {
       
         width: 70%;
+    }
+    .trackBanner > div > div:nth-child(1) > h3 {
+        margin-top: 80px;
     }
 }
    

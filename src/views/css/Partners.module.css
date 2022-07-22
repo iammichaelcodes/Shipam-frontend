@@ -26,6 +26,7 @@
     width: 400px;
     font-size: 35px;
     font-weight: bold;
+    margin-top: 80px;
 }
 .firstSectionCon > div >  div  > p {
     font-weight: 400;
@@ -36,6 +37,7 @@
 }
 .firstSectionCon >div >  img {
     width: 350px;
+    margin-top: 40px;
 }
 .get_startedbtn {
     border: none;
@@ -229,6 +231,9 @@
         font-size: 23px;
         font-weight: bold;
         width:320px;
+    }
+    .firstSectionCon > div >  div > h1 {
+        margin-top: 60px;
     }
 }
 @media screen and (max-width:500px) {
