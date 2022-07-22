@@ -191,6 +191,8 @@
     }
     .container > div {
         width:100%;
+        padding-top: 30px !important;
+        border-radius: 15px;
     }
     .container > div > div {
         gap: 12px;
