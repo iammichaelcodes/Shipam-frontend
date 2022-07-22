@@ -57,6 +57,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: center;
 }
 .container > div > span {
     margin-bottom: 30px;
@@ -123,6 +124,7 @@
     padding-bottom: 2%;
     display: flex;
     justify-content: center;
+    align-items: center;
     width:95%;
     background: linear-gradient(146.97deg, #003E88 16.44%, #009AED 80.3%);
 }
@@ -215,5 +217,18 @@
     }
     .lastSecContent {
         margin-bottom: 30px;
+    }
+   
+}
+@media screen and (max-width:450px) {
+    .lastSecContent > div > div {
+        padding: 3% 2% !important;
+    }
+    .lastSecContent > div > div  > h1 {
+        width: 300px;
+        text-align: center;
+    }
+    .lastSecContent > div > div  > p {
+        
     }
 }
