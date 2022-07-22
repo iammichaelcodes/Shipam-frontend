@@ -116,7 +116,7 @@ const Pricing = () => {
                                     </span>
                                 </div>
                              </div>
-                             <div>
+                             <div className={style.lastPriceDiv}>
                                 <p>Professional</p>
                                 <span>&#8358;80,000</span>
                                 <Link to="/started" className={style.get_startedbtn}>
