@@ -1,7 +1,6 @@
 import React,{Fragment} from "react";
 import style from "../views/css/Pricing.module.css";
 import pricingIcon from "../assets/images/pricingIcon.png";
-import ZeroNaira from "../assets/images/zeroNaira.png";
 import { Link } from "react-router-dom";
 
 
