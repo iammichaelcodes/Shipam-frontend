@@ -5,6 +5,7 @@ import Track from './Track'
 import SignUp from './SignUp'
 import SignIn from './SignIn'
 import Pricing from './Pricing'
+import Terms from './Terms&Privacy'
 
 
-export {Home,Partners,Developer,Track, SignUp, Pricing,SignIn}
+export {Home,Partners,Developer,Track, SignUp, Pricing,SignIn,Terms}

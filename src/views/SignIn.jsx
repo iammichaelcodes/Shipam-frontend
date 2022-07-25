@@ -4,7 +4,6 @@ import Google from "../assets/images/GoogleIcon.png";
 import facebook from "../assets/images/logos_facebook.png";
 import Twitter from "../assets/images/Twitter.png";
 import logo from "../assets/images/Shipam.png";
-import headlogo from "../assets/images/Shipam-logo.png";
 import email from "../assets/images/clarity_email-solid.png";
 import password from "../assets/images/password.png";
 import { Link } from "react-router-dom";

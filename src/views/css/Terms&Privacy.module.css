@@ -1,0 +1,11 @@
+.TermsDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.TermsDiv > div {
+    width: var(--developers--width);
+    justify-content: center;
+}
