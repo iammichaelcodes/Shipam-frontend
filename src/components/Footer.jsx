@@ -26,7 +26,7 @@ const Footer = () => {
                         <div className={style.newsletterIcon_Div}>
                             <p>Subscribe to Our Newsletters </p>
                             
-                            <input type="text" placeholder="Your Email here"/> <Button  text="Subscribe" className={style.footerBtn}/>
+                            <input type="text" placeholder="Your Email here" className={style.footerInput}/> <Button  text="Subscribe" className={style.footerBtn}/>
                         </div>
                         <span className={style.vectorIcon}>
                             <img src={Instagram} alt="instagramIcon" /> <img src={Twitter} alt="twittericon" />

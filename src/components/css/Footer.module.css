@@ -91,14 +91,17 @@
     font-size: 15px;
     font-weight: 400;
 }
-.newsletterIcon_Div > input {
-    border-radius: 12px;
-    border: 1px solid var(--btn-color1);
-    padding: 7px;
-    
+.footerInput {
+    border-radius: 12px !important;
+    border: 1px solid var(--btn-color1) !important;
+    padding: 7px !important;
+    outline: none !important;
+    color: black !important;
+    background-color: #fff !important;
 }
-.newsletterIcon_Div > input:focus {
-    outline: none;
+
+.footerInput::placeholder {
+    color: black !important;
 }
 .newsletterIcon_Div {
    margin-bottom: 10px;
