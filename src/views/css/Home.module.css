@@ -54,6 +54,7 @@
     color: var(--main--color);
     padding: 3px;
     font-weight: bold;
+    line-height: 1.5;
 }
 .bannerDiv > .bannerCon > div:nth-child(2)  {
     display: flex;
