@@ -120,6 +120,12 @@
     margin-top: 30px;
     font-size: 13px;
 }
+.signIn {
+    display: none;
+}
+.SignUp > div > div:nth-child(2) > p {
+  display: none;
+}
 @media screen and (max-width:1029px) {
     .SignUp > div {
         width: 90%;
@@ -143,6 +149,19 @@
     }
     .SignUp > div > div:nth-child(1) {
         width: 100%;
+    }
+    .signIn {
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+        display: block;
+        margin-top: -14px;
+        text-decoration: underline;
+    }
+    .SignUp > div > div:nth-child(2) > p {
+        display: block;
+
+        font-size: 13px;
     }
   
 }

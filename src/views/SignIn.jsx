@@ -35,6 +35,10 @@ const SignIn  = () => {
                             <Link to="/signin" className={style.btnsgn}>
                                     Sign In
                             </Link>
+                            <p>No account yet ?</p> 
+                            <Link to="/signin" className={style.signIn}>
+                                    Sign Up
+                            </Link>
                         </div>
                         <div>
                             <img src={logo} alt="shipam Icons"/>
