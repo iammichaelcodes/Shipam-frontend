@@ -80,10 +80,14 @@
     .TermsDiv > div {
         width:90%
     }
+    .Itemdiv > p {
+        text-align: justify;
+     }
   
 }
 @media only screen and (max-width:430px) {
  .Itemdiv > h3 {
     font-size: 15px;
  }
+ 
 }
