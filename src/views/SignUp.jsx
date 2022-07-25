@@ -48,9 +48,12 @@ const SignUp = () => {
                             <img src={password} alt="name ID"/>
                             <input type="text" placeholder="Password" className={style.inputfields}/>
                           </div>
-                          <Link to="/signin" className={style.btnsgn}>
+                          <Link to="/signup" className={style.btnsgn}>
                                 Sign Up
-                            </Link>
+                          </Link>
+                          <p>Already have an account ?</p> <Link to="/signin" className={style.signIn}>
+                                Sign In
+                          </Link>
                         </div>
                     </div>
                 </div>

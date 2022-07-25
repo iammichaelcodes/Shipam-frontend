@@ -1,7 +1,7 @@
 
 import {Fragment} from 'react';
 import './App.css';
-import {Home,Partners,Developer,Track, SignUp,Pricing} from './views/index';
+import {Home,Partners,Developer,Track, SignUp,Pricing, SignIn} from './views/index';
 import { Footer, Header } from './components/index';
 import { BrowserRouter  as Router,Routes, Route } from 'react-router-dom';
 
@@ -20,6 +20,7 @@ function App() {
           <Route path="/track" element={<Track />}/>
           <Route path="/pricing" element={<Pricing />}/>
           <Route path="/signup" element={<SignUp />}/>
+          <Route path="/signin" element={<SignIn />}/>
         </Routes>
         <Footer />
       </Router>
