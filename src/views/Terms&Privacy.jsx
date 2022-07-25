@@ -27,6 +27,11 @@ const Terms = () => {
                             <span>Disclaimers</span>
                             <span>Limitations</span>
                         </div>
+                        <div>
+                            <div className={style.Itemdiv}>
+                                <h3>Welcome</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

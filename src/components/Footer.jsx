@@ -7,7 +7,7 @@ import Instagram from "../assets/images/InstagramVector.png";
 
 const Footer = () => {
     const home = "/";
-
+    const terms = "/terms";
 
     return (  
          <>
@@ -45,7 +45,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <span>
-                        <p>Terms & Condition</p>  <p>Privacy Policy</p> 
+                       <Link to={terms}>Terms & Condition</Link>   <p>Privacy Policy</p> 
                     </span>
                 </div>
            </div>

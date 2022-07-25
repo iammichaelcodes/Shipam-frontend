@@ -6,6 +6,7 @@
     align-items: center;
     background-image:  url("../../assets/images/TrackBanner.png");
     background-color: var(--main--color);
+    background-blend-mode: overlay;
     mix-blend-mode: color-burn;
     height:auto;
 }
@@ -246,9 +247,9 @@
     .trackBanner > div > div:nth-child(1) >div >  input {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
-        background-color: var(--main--color);
-        border: 1px solid #fff;
-        color: #fff;
+        background-color: var(--main--color) !important;
+        border: 1px solid #fff !important;
+        color: #fff !important;
         padding: 12px 5px;
         font-weight: 300;
     }
@@ -257,7 +258,7 @@
         height: 42px;
     }
     ::placeholder {
-        color: #fff;
+        color: #fff ;
     }
     .trackBanner > div > div:nth-child(1) > div {
         width:100%;

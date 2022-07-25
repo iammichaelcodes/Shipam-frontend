@@ -131,6 +131,10 @@
 .footerDiv > div > span > p {
     font-size: 15px;
 }
+.footerDiv > div > span >a {
+    text-decoration: none;
+    color: #fff;
+}
 @media screen and (max-width:780px) {
     .footerDiv > div {
         padding: 15px 3%;

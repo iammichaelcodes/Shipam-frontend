@@ -109,8 +109,8 @@
     height: inherit !important;
     color: #000 !important;
 }
-::placeholder {
-    color: #000 !important;
+.inputfields::placeholder{
+    color: #000;
 }
 
 .btnsgn {

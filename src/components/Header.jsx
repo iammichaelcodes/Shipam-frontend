@@ -3,7 +3,7 @@ import {Fragment} from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/Shipam-logo.png";
 import style from "../components/css/Header.module.css"
-import {Button} from "../components/index.js"
+
 
 const Header = () => {
     //variable declaration
@@ -39,7 +39,7 @@ const Header = () => {
                 <div className={ `${navMenu ? style.RWD_Nav_Menu : ""} `}>
                     <div onClick={closeNavMenu} style={{cursor:"pointer"}}></div>
                     <ul>
-                        <li>
+                        <li className={style.closebtn}>
                             <span onClick={closeNavMenu}>&times;</span>
                         </li>
                        <li>
@@ -64,7 +64,7 @@ const Header = () => {
                        </li>
                        <li className={style.resBtn}>
                        <span>
-                            <Button text="Sign In" className={style.nav_btn}/> <Button text="Sign Up" className={style.nav_btn} />
+                          <Link to={signin} className={style.nav_btn}>Sign In </Link><Link to={signUp} className={style.nav_btn}>Sign Up </Link>
                        </span>
                        </li>
                     </ul>
