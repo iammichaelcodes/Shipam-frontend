@@ -36,7 +36,7 @@ const Partners = () => {
                  <section className={style.thirdSectionCon}>
                      <div>
                          <div>
-                              <img src={FormImage}  alt="form image"/>
+                              <img src={FormImage}  alt="form"/>
                               <div>
                                    <h2>Become a Partner</h2>
                                    <p>We’d like to work with you</p>
