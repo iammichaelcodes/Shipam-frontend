@@ -42,27 +42,27 @@ const Header = () => {
                         <li className={style.closebtn}>
                             <span onClick={closeNavMenu}>&times;</span>
                         </li>
-                       <li>
+                       <li onClick={closeNavMenu}>
                           <Link to={track}>
                              Track
                           </Link>
                        </li>
-                       <li>
+                       <li  onClick={closeNavMenu}>
                           <Link to={dev}>
                              Demo
                           </Link>
                        </li>
-                       <li>
+                       <li  onClick={closeNavMenu}>
                           <Link to={pricing}>
                              Pricing
                           </Link>
                        </li>
-                       <li>
+                       <li  onClick={closeNavMenu}>
                           <Link to={partner}>
                                 Partners
                           </Link>
                        </li>
-                       <li className={style.resBtn}>
+                       <li className={style.resBtn}  onClick={closeNavMenu}>
                        <span>
                           <Link to={signin} className={style.nav_btn}>Sign In </Link><Link to={signUp} className={style.nav_btn}>Sign Up </Link>
                        </span>
