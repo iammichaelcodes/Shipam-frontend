@@ -70,6 +70,8 @@ nav > div:nth-child(3) {
     width: 85px;
     border-radius: 7px;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
 
 

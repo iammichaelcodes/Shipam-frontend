@@ -11,7 +11,9 @@ const Header = () => {
     const dev = "/dev";
     const track = "/track";
     const partner = "/partner";
-    const pricing = "/pricing"
+    const pricing = "/pricing";
+    const signUp ="/signup";
+    const signin ="/signin";
 
     //usestate hooks
     const [navMenu, setNavMenu] = useState(false);
@@ -69,8 +71,8 @@ const Header = () => {
                    
                 </div>
                 <div >
-                  <Button text="Sign In" className={style.nav_btn}/>
-                  <Button text="Sign Up" className={style.nav_btn} />
+                  <Link to={signin} className={style.nav_btn}>Sign In </Link>
+                  <Link to={signUp} className={style.nav_btn}>Sign Up </Link>
                 </div>
             </nav>
         </Fragment>
