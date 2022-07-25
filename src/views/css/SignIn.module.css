@@ -106,7 +106,7 @@
     height: inherit !important;
     color: #000 !important;
 }
-::placeholder {
+.inputfields::placeholder {
     color: #000 !important;
 }
 

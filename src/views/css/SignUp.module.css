@@ -110,7 +110,7 @@
     color: #000 !important;
 }
 .inputfields::placeholder{
-    color: #000;
+    color: #000 !important;
 }
 
 .btnsgn {

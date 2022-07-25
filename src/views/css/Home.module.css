@@ -46,7 +46,7 @@
 }
 .bannerDiv > .bannerCon > div:nth-child(1) > p {
     display: flex;
-    font-size: 12px;
+    font-size: 13px;
     flex-direction: column;
     align-self: center;
     width: 450px;
@@ -177,8 +177,7 @@
   width: 280px !important;
 }
 .bannerParagraph_tag {
-    font-size: 9px !important;
-    width: 340px !important;
+    width: 95% !important;
 }
 .priceBtn {
     padding: 13px 13px;
@@ -215,7 +214,7 @@
     background-color: var(--main--color);
 }
 ::placeholder {
-    color: #fff;
+    color: #fff !important;
 }
 .bannerInput {
     width: 100%;
