@@ -47,7 +47,7 @@
 .faqSection > div  > div > div > p {
     font-weight: bold;
 }
-.Question {
+.title {
     background-color: #fff;
     border: 1px solid var(--main--color);
     width: 100%;
@@ -58,7 +58,7 @@
     font-weight: 700;
     font-size: 12px;
 }
-.Question > svg {
+.title > svg {
     color: var(--main--color) !important;
     right:10px;
     position:absolute;
@@ -66,22 +66,26 @@
     top:25%;
     cursor: pointer;
 }
-.Answer {
+.content {
+   display: none;
+}
+
+.content > p {
+     line-height: 1.8;
+}
+.contentShow {
+    display: block;
     width: 100%;
     background-color:var(--main--color);
     border: 1px solid var(--main--color);
-    display: none;
     padding: 10px;
     border-radius: 10px;
     text-align: left;
     position: relative;
     font-weight: 300;
     color: #fff;
-    font-size: 12px;
-}
-
-.Answer > p {
-     line-height: 1.6;
+    font-size: 14px;
+    
 }
 @media screen and (max-width:930px) {
     .faqSection > div > div:nth-child(1) {
@@ -101,7 +105,7 @@
 
 @media screen and (max-width:600px) {
     .faqSection > div  > div {
-        margin-bottom: 20px;
+        margin-bottom: 60px;
         width: 80%;
     }
     .faqSection > div > div > h1  {
