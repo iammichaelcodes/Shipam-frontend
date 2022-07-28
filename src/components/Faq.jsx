@@ -11,7 +11,7 @@ const Faq = () => {
      const [selected, setSelcted] = useState(null);
 
       const openfaq = (ind) => {
-          if (selected == ind) {
+          if (selected === ind) {
             return setSelcted(null);
           }
           else{
@@ -30,10 +30,10 @@ const Faq = () => {
                        {data.map((item, ind) => (
                             <div>
                                 <Button  text={item.Question} className={style.title} >
-                                  {selected == ind ? <ArrowUp onClick={() => openfaq(ind)} />  : <ArrowDown onClick={() => openfaq(ind)}/>   }
+                                  {selected === ind ? <ArrowUp onClick={() => openfaq(ind)} />  : <ArrowDown onClick={() => openfaq(ind)}/>   }
                                 </Button>
                                 
-                                <div className={` ${selected == ind ? style.contentShow: style.content}`}>
+                                <div className={` ${selected === ind ? style.contentShow: style.content}`}>
                                     <p>{item.Answer}</p>
 
                                 </div>
