@@ -6,8 +6,9 @@ import { Useviewport } from "../useviewPorts";
 import Courier from "../components/Courier";
 import Whyshipam from "../components/whyShipam";
 import Courierpartners from "../components/CourierPartners";
-import Faqsection from "../components/faqSection";
 import Faq from "../components/Faq";
+
+
 const Home = () =>{
 
     const {width} = Useviewport();
