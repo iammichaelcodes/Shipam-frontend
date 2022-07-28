@@ -60,7 +60,6 @@
 }
 .title:focus {
     outline: none;
-    border: none;
 }
 .title > svg {
     color: var(--main--color) !important;
